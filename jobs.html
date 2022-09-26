@@ -1,0 +1,811 @@
+<head>
+    <meta charset="utf-8"/>
+    <link href="./star.png" rel="icon"/>
+    <link as="font" href="static/fonts/Inter_v_3.11.woff2.bin" rel="preload" type="font/woff2"/>
+    <link as="font" href="static/fonts/internshala-icons_nb9ica.woff2.bin" rel="preload" type="font/woff2"/>
+    <script src="static/js/web_vitals/web-vitals.umd.js"></script>
+    <script defer="" src="static/js/includes/common/libraries.js"></script>
+    <link href="static/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="./favicon_v_5.ico" rel="icon"/>
+    <title>Việc làm</title>
+    <meta content="https://internshala.com//static/images/internshala_og_image.jpg" property="twitter:image:src"/>
+    <link href="static/css/internship/search/search.css" rel="stylesheet" type="text/css"/>
+    <script defer="" src="static/js/combined/common_form_1.js" type="text/javascript"></script>
+    <script defer="" src="static/js/includes/lottie_light.js" type="text/javascript"></script>
+    <script defer="" src="static/js/combined/internship-search.js" type="text/javascript"></script>
+    <script defer="" src="static/js/subscribe/popup.js" type="text/javascript"></script>
+    <script defer="" src="../www.google.com/recaptcha/api_render_6LeM4ysaAAAAADnBKTtJYjctzW9xSImuZ5Awiz6Y.js.mjs"
+            type="text/javascript"></script>
+    <link href="jobs/page-2.html" rel="next"/>
+    <link href="jobs/index.html" rel="canonical"/>
+</head>
+<body>
+<div id="wrapper">
+
+    <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal" id="login-modal" role="dialog" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal" type="button">
+                        <i aria-hidden="true" class="ic-24-cross"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="user-menu-container">
+                        <div id="user-menu">
+                        </div>
+                    </div>
+                    <form id="modal-login-form" method="POST" role="form">
+                        <input name="csrf_test_name" type="hidden" value="07d4a0539d8f306794bdcf8d040027bb"/>
+                        <div class="form-group">
+                            <label class="control-label" for="email">Email</label>
+                            <input class="form-control" id="modal_email" name="email" tabindex="1" type="email"/>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="password">Password</label>
+                            <input class="form-control" id="modal_password" name="password" tabindex="2"
+                                   type="password"/>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary" id="modal_login_submit" tabindex="3" type="submit">Đăng nhập
+                            </button>
+                        </div>
+                        <div class="form-group new_to_internshala">
+                            <label>
+                                Đăng ký ngay tại đây (<a href="#">Sinh viên</a> / <a href="#">Công ty</a>)
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header_container container-fluid" id="header">
+        <div class="max-width-container">
+            <div class="layer"></div>
+            <nav class="navbar navbar-expand-md">
+                <div class="brand_container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="static/images/home/internships/categories/internstarslogotrans.png"/>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse navbar_desktop">
+                    <ul class="navbar-nav nav_menu_container">
+                        <li class="nav-item dropdown dropdown-hover">
+                            <a class="nav-link dropdown-toggle" href="#">Đăng nhập / Đăng ký <i
+                                    class="is_icon_header ic-24-filled-down-arrow"></i></a>
+                            <div class="dropdown-menu dropdown-menu-center menu_dropdown" id="login_register-dropdown">
+                                <div class="dropdown-inner">
+                                    <div class="dropdown-inner-container">
+                                        <div class="inner-dropdown">
+                                            <ul class="dropdown-menu-part profile-dropdown">
+                                                <li class="item">
+                                                    <a class="item_link" href="student.html"
+                                                       id="header_registration_link">Đăng ký
+                                                        tài khoản sinh viên</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a class="item_link" href="employer .html">Đăng ký tài khoản nhà
+                                                        tuyển dụng</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a class="item_link" data-target="#login-modal"
+                                                       data-toggle="modal" type="button" id="header_login_modal_button">Đăng
+                                                        nhập</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div id="contentFilters">
+        <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal" id="filtersModal" role="dialog"
+             style="display: none" tabindex="-1">
+            <div class="filtersModal_popover_overlay">
+            </div>
+            <div class="filters_expand">
+                <div class="filterApplied">
+                    <div class="heading_5 modalFilterUi">
+                        Bộ lọc
+                    </div>
+                </div>
+                <i class="cancel ic-24-cross"></i>
+            </div>
+            <div id="mobile_filters_container">
+                <div id="filters_mobile">
+                    <div id="form_container_mobile">
+                        <form class="without_search_boosters" id="search_form_mobile" method="POST" role="form">
+                            <div class="category_container form-group showToastOnMobileFalse" id="category_container"
+                                 title='Uncheck "As per my preferences" checkbox to search manually'>
+                                <label class="control-label" for="select_category">Danh mục</label>
+                                <div id="categoryOptions_mobile">
+                                </div>
+                                <div class="loading_spinner" id="loading_spinner_category" style="display: none;">
+                                </div>
+                            </div>
+                            <div class="location_container form-group showToastOnMobileFalse" data-container="body"
+                                 data-content="&lt;div style='width:160px; font-size:12px;' class='data_content'&gt;Click here to change location&lt;/div&gt;"
+                                 data-placement="bottom"
+                                 data-template='&lt;div class="popover location-filters-popover" style="background-color:#1295c9; color:#fff;"&gt;&lt;div class="arrow" style="left:14% !important"&gt;&lt;/div&gt;&lt;div class="popover-inner"&gt;&lt;div class="popover-content"&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;'
+                                 data-toggle="popover" id="location_filter_mobile"
+                                 title='Uncheck "As per my preferences" checkbox to search manually'>
+                                <label for="city_sidebar">Địa điểm</label>
+                                <div id="cityOptions_mobile">
+                                </div>
+                                <div class="loading_spinner" id="loading_spinner_location" style="display: none;">
+                                </div>
+                            </div>
+                            <div class="filters_checkboxes_containers job_checkboxes_container filters_checkboxes_containers_add_transparent showToastOnMobileFalse"
+                                 title='Uncheck "As per my preferences" checkbox to search manually'>
+                                <div class="form-group flex-row checkbox checkbox_group checkbox_container"
+                                     id="remote_check_box">
+                                    <input id="remote_job_mobile" name="remote_job" type="checkbox"/>
+                                    <label class="" for="remote_job_mobile"></label>
+                                    <label for="remote_job_mobile" id="remote_check_box_label">Làm việc từ xa</label>
+                                </div>
+                                <div class="form-group flex-row checkbox checkbox_group checkbox_container"
+                                     id="fresher_job_mobile">
+                                    <input id="fresher_job_checkbox_mobile" name="fresher_job" type="checkbox"/>
+                                    <label class="" for="fresher_job_checkbox_mobile"></label>
+                                    <label for="fresher_job_checkbox_mobile" id="fresher_job_checkbox_label">Fresher
+                                        jobs</label>
+                                </div>
+                                <div class="form-group flex-row checkbox checkbox_group checkbox_container"
+                                     id="salary_3lpa_mobile">
+                                    <input id="salary_3lpa_checkbox_mobile" name="salary_3lpa" type="checkbox"/>
+                                    <label class="" for="salary_3lpa_checkbox_mobile"></label>
+                                    <label for="salary_3lpa_checkbox_mobile" id="salary_3lpa_checkbox_label">Chỉ hiển
+                                        thị công việc từ 5.000.000 VNĐ+
+                                    </label>
+                                </div>
+                                <div class="form-group flex-row checkbox checkbox_group checkbox_container"
+                                     id="internship_check_box">
+                                    <input id="internship_checkbox_mobile" name="internship_checkbox" type="checkbox"/>
+                                    <label class="" for="internship_checkbox_mobile"></label>
+                                    <label for="internship_checkbox_mobile" id="internship_check_box_label">Bao gồm tất
+                                        cả kỳ
+                                        thực tập</label>
+                                </div>
+                            </div>
+                            <div class="applyContainer">
+                                <div class="reset_container">
+                                    <a class="reset" href="#"
+                                       title="All filters applied have been cleared. Click on 'Apply' to view all jobs">
+                                        Xóa tất cả</a>
+                                </div>
+                                <div class="apply btn btn-primary">
+                                    Áp dụng
+                                </div>
+                            </div>
+                        </form>
+                        <form class="" id="keyword_search_form_mobile" method="POST" role="form">
+                            <div class="heading_5">Tìm kiếm</div>
+                            <div class="form-group keywordContainer">
+                                <div class="keyword showToastOnMobileFalse"
+                                     title='Uncheck "As per my preferences" checkbox to search manually'>
+                                    <div class="input-group has_cross_and_button">
+                                        <input autocomplete="off" class="form-control pop-mobile" id="keywords_mobile"
+                                               name="keywords" placeholder="e.g. Design, Mumbai, Infosys" type="text"
+                                               value=""/>
+                                        <span class="input-group-btn cross_btn_container"><button class="cross_btn"
+                                                                                                  type="button"><i
+                                                class="ic-16-cross"></i> </button></span>
+                                        <button class="btn btn-primary showToastOnMobileFalse" id="search_mobile"
+                                                title='Uncheck "As per my preferences" checkbox to search manually'
+                                                type="submit">
+                                            <i class="ic-16-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search_content" id="content">
+        <div id="internship_for_women" style="display:none;">
+            <div class="content-inner">
+                <div class="banner_content">
+                    <div class="heading heading_2">Kỳ thực tập cho phụ nữ</div>
+                    <div class="sub_heading heading_5">Bắt đầu công việc của bạn với kỳ thực tập</div>
+                    <div class="btn internship_for_women_button">Xem các kỳ thực tập</div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="internships_list_container">
+            <div class="max-width-container">
+                <div class="table-cell" id="search_criteria_mobile_container">
+                    <div class="filters">
+                        <div class="filterUi">
+                            <i class="ic-16-filter" id="filter_ui_icon_mobile"></i>
+                            <span class="heading_5" id="filter_ui_heading_mobile">Bộ lọc</span>
+                        </div>
+                    </div>
+                    <div class="filters_tags"></div>
+                    <a class="save-as-alert-cta" href="#" id="save_as_alert_cta">
+                        <div class="save-as-alert-mobile" id="save_as_alert_mobile">
+                            <img alt="bell_icon" src="/static/images/icons/bell_alert.svg"/>
+                            <h6>Lưu tìm kiếm này dưới dạng thông báo</h6>
+                        </div>
+                    </a>
+                    <div class="internship_seo_heading_container_mobile" id="internship_seo_heading_container">
+                        <h1 class="heading heading_4_6">
+                            1 Công việc<i class="ic-16-chevron-down" id="content_open_button"></i></h1>
+                        <div class="body-small" id="open_content_collapse">
+                            Bắt đầu ứng tuyển vào những công việc hàng đầu ở các công ty Việt Nam dưới đây.
+                        </div>
+                    </div>
+                </div>
+                <div class="internship_seo_heading_container_desktop" id="internship_seo_heading_container">
+                    <h1 class="heading heading_4_6">
+                        1 Công việc<i class="ic-16-chevron-down" id="content_open_button"></i></h1>
+                    <div class="body-small" id="open_content_collapse">Bắt đầu ứng tuyển vào những công việc hàng đầu ở
+                        các công ty Việt Nam dưới đây.
+                    </div>
+                </div>
+                <div id="reference">
+                    <div id="search_criteria_container">
+                        <div class="fixed_on_scroll" id="filters_container">
+                            <div id="filters">
+                                <a class="save-as-alert-cta" href="#" id="save_as_alert_cta">
+                                    <div class="save-as-alert" id="save_as_alert">
+                                        <img alt="bell_icon" src="/static/images/icons/bell_alert.svg"/>
+                                        <h6>Lưu tìm kiếm này dưới dạng thông báo</h6>
+                                    </div>
+                                </a>
+                                <div class="form-container">
+                                    <div class="filterUi">
+                                        <i class="ic-16-filter" id="filter_ui_icon_desktop"></i>
+                                        <span class="heading_5" id="filter_ui_heading_desktop">Bộ lọc</span>
+                                    </div>
+                                    <form id="search_form" method="POST" role="form">
+                                        <div class="category_container form-group">
+                                            <label for="select_category">Danh mục
+                                                <col/>
+                                            </label>
+                                            <div id="categoryOptions">
+                                                <select class="form-control chosen-select default-chosen"
+                                                        data-placeholder="e.g. Tiếp thị" id="select_category"
+                                                        multiple="" name="select_category" tabindex="4">
+                                                    <option value="engineering">Kỹ sư</option>
+                                                    <option value="mba">Kinh doanh/MBA</option>
+                                                    <option value="computer%20science">Khoa học máy tính</option>
+                                                    <option value="humanities">Nhân văn</option>
+                                                    <option value="media">Đa phương tiện</option>
+                                                    <option value="creative%20writing">Sáng tạo nội dung</option>
+                                                    <option value="graphic%20design">Graphic Design</option>
+                                                    <option value="finance">Tài chính</option>
+                                                    <option value="civil">Kỹ sư dân dụng</option>
+                                                    <option value="chemical">Kỹ sư hóa chất</option>
+                                                </select>
+                                                <div class="chosen-container chosen-container-multi chosen-with-drop"
+                                                     id="select_category_chosen_temp" title="">
+                                                    <ul class="chosen-choices">
+                                                        <li class="search-field">
+                                                            <input autocomplete="off"
+                                                                   class="chosen-search-input default"
+                                                                   style="width: 119px;" tabindex="4" type="text"
+                                                                   value="e.g. Tiếp thị"/>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="location_container form-group" id="location_filter">
+                                            <label for="city_sidebar">Địa điểm</label>
+                                            <div id="cityOptions">
+                                                <select class="form-control chosen-select default-chosen"
+                                                        data-placeholder="e.g. Hà Nội" id="city_sidebar" multiple=""
+                                                        name="city_sidebar" tabindex="5">
+                                                    <option value="mumbai">Hà Nội</option>
+                                                    <option value="bangalore">Hải Phòng</option>
+                                                    <option value="delhi">Tp. Hồ Chí Minh</option>
+                                                    <option value="hyderabad">Đà Nẵng</option>
+                                                    <option value="pune">Quảng Ninh</option>
+                                                    <option value="chennai">Nam Định</option>
+                                                    <option value="kolkata">Huế</option>
+                                                    <option value="ahmedabad">Nghệ An</option>
+                                                </select>
+                                                <div class="chosen-container chosen-container-multi chosen-with-drop"
+                                                     id="city_sidebar_chosen_temp" title="">
+                                                    <ul class="chosen-choices">
+                                                        <li class="search-field">
+                                                            <input autocomplete="off"
+                                                                   class="chosen-search-input default"
+                                                                   style="width: 119px;" tabindex="4" type="text"
+                                                                   value="e.g. Hà Nội"/>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="filters_checkboxes_containers job_checkboxes_container">
+                                            <div class="form-group flex-row checkbox checkbox_group checkbox_container"
+                                                 id="part_time_check_box">
+                                                <input id="remote_job" name="remote_job" type="checkbox"/>
+                                                <label class="" for="remote_job"></label>
+                                                <label for="remote_job">Làm việc từ xa</label>
+                                            </div>
+                                            <div class="form-group flex-row checkbox checkbox_group checkbox_container"
+                                                 id="fresher_job_check_box">
+                                                <input id="fresher_job_checkbox" name="fresher_job_checkbox"
+                                                       type="checkbox"/>
+                                                <label class="" for="fresher_job_checkbox"></label>
+                                                <label for="fresher_job_checkbox">Fresher jobs</label>
+                                            </div>
+                                            <div class="form-group flex-row checkbox checkbox_group checkbox_container"
+                                                 id="salary_checkbox">
+                                                <input id="salary_3lpa_checkbox" name="salary_3lpa_checkbox"
+                                                       type="checkbox"/>
+                                                <label class="" for="salary_3lpa_checkbox"></label>
+                                                <label for="salary_3lpa_checkbox">Chỉ hiển thị công việc từ 5.000.000
+                                                    VNĐ+</label>
+                                            </div>
+                                            <div class="form-group flex-row checkbox checkbox_group checkbox_container"
+                                                 id="part_time_check_box">
+                                                <input id="internship_checkbox" name="internship_checkbox"
+                                                       type="checkbox"/>
+                                                <label class="" for="internship_checkbox"></label>
+                                                <label for="internship_checkbox">Bao gồm tất cả các kỳ thực tập</label>
+                                            </div>
+                                        </div>
+                                        <div class="reset_link_container reset_jobs_container">
+                                            <a class="reset_link_desktop" href="#" id="reset_link">Xóa tất cả</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="list_container">
+                        <div class="internship_list_container" id="marketing_first_container"></div>
+                        <div class="internship_list_container" id="internship_list_container">
+                            <div id="internship_list_container_1">
+                                <div class="container-fluid individual_internship visibilityTrackerItem"
+                                     id="individual_internship_1900284" internshipid="1900284">
+                                    <div class="internship_meta">
+                                        <div class="individual_internship_header">
+                                            <div class="company">
+                                                <div class="heading_4_5 profile">
+                                                    <a class="view_detail_button" href="#">Phát triển ứng dụng di động</a></div>
+                                                <div class="heading_6 company_name">
+                                                    <a class="link_display_like_text view_detail_button" href="job_detail.html">
+                                                        Attestr </a>
+                                                </div>
+                                            </div>
+                                            <div class="internship_logo">
+                                            </div>
+                                        </div>
+                                        <div class="individual_internship_details individual_internship_job">
+                                            <p id="location_names">
+                                                <i class="ic-16-map-pin"></i>
+                                                <span>
+<a class="location_link view_detail_button" href="#">Hà Nội</a> </span>
+                                            </p>
+                                            <div class="internship_other_details_container">
+                                                <div class="other_detail_item_row">
+                                                    <div class="other_detail_item">
+                                                        <div class="item_heading">
+                                                            <i class="ic-16-play-circle"></i>
+                                                            <span>
+                                Ngày bắt đầu
+                            </span>
+                                                        </div>
+                                                        <div class="item_body" id="start-date-first">
+                                                            <span class="start_immediately_mobile"></span>Ngay lập tức
+                                                        </div>
+                                                    </div>
+                                                    <div class="other_detail_item">
+                                                        <div class="item_heading">
+                                                            <i class="ic-16-money"></i>
+                                                            <span>Lương</span>
+                                                        </div>
+                                                        <div class="item_body">
+                                                            500$ - 1000$
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tags_container_mobile">
+                                            <div class="status-container">
+                                                <div class="status status-small status-inactive">Fresher Job</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="button_container">
+                                        <div class="tags_container">
+                                            <div class="status-container">
+                                                <div class="status status-small status-info"><i
+                                                        class="ic-16-reschedule"></i>3 ngày trước
+                                                </div>
+                                            </div>
+                                            <div class="status-container status-container-desktop">
+                                                <div class="status status-small status-inactive">Fresher Job</div>
+                                            </div>
+                                        </div>
+                                        <a class="view_detail_button" href="#">
+                                            <div>Xem chi tiết</div>
+                                            <i class="ic-16-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular_list" id="dual_search_container">
+                            <div class="dual_search_container">
+                                <div class="heading_6">
+                                    Gợi ý cho bạn
+                                </div>
+                                <div class="dual_search_content">
+                                    <div class="dual_search_content_left">
+                                        <div class="dual_search">
+                                            <a href="#">
+                                                Tiếp thị
+                                            </a>
+                                        </div>
+                                        <div class="dual_search">
+                                            <a href="#">
+                                                Sáng tạo nội dung
+                                            </a>
+                                        </div>
+                                        <div class="dual_search">
+                                            <a href="#">
+                                                Khoa học máy tính
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dual_search_content_right">
+                                        <div class="dual_search">
+                                            <a href="#">
+                                                Công việc ở Hà Nội
+                                            </a>
+                                        </div>
+                                        <div class="dual_search">
+                                            <a href="#">
+                                                Công việc ở Đà Nẵng
+                                            </a>
+                                        </div>
+                                        <div class="dual_search">
+                                            <a href="#">
+                                                Công việc ở Hải Phòng
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer_reference"></div>
+            </div>
+        </div>
+    </div>
+    <div class="generic_footer" data-custom-attribute="footer_custom_value" id="footer">
+        <div class="container-fluid">
+            <div class="max-width-container">
+                <div class="footer_container">
+                    <div class="footer-column desktop-footer" id="internship_by_place">
+                        <div class="footer-list">
+                            <h5>Thực tập theo địa điểm</h5>
+                            <div class="footer-list-item">
+                                <a href="#">Thực tập ở India</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#">Thực tập ở Delhi</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#">Thực tập ở Bangalore</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#">Thực tập ở Hyderabad</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#">Thực tập ở Mumbai</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#">Thực tập ở Chennai</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#">Thực tập ở Gurgaon</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#">Thực tập ở Kolkata</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#">Thực tập ảo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-column desktop-footer" id="internship_by_stream">
+                        <div class="footer-list">
+                            <h5>Thực tập theo luồng</h5>
+                            <div class="footer-list-item">
+                                <a href="#">Thực tập Khoa học Máy tính</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#">Thực tập Điện tử</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#">Mechanical Internship</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#">Thực tập dân sự</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#">Thực tập tiếp thị</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#">Thực tập hóa chất</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#">Thực tập tài chính</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#">Học bổng Nghiên cứu Mùa hè</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#">Chương trình tìm kiếm đội ngũ Đại sứ Sinh viên</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-column desktop-footer desktop-footer-1255-hide" id="jobs_by_stream">
+                        <div class="footer-list">
+                            <h5>Việc làm theo Luồng</h5>
+                            <div class="footer-list-item">
+                                <a href="#" rel="noopener" target="_blank">Công việc tiếp thị</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#" rel="noopener" target="_blank">Công việc viết nội dung</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#" rel="noopener" target="_blank">Công việc phát triển web</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#" rel="noopener" target="_blank">Công việc bán hàng</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#" rel="noopener" target="_blank">Công việc tài chính</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-column desktop-footer" id="trainings-container">
+                        <div class="footer-list">
+                            <h5>
+                                <div id="trainings-footer">
+                                    <a href="#" rel="noopener" target="_blank">Đào tạo trực tuyến <span class="offer">80% OFF</span>
+                                    </a>
+                                </div>
+                            </h5>
+                            <div class="footer-list-item">
+                                <a href="#" rel="noopener" target="_blank">Phát triển web</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#" rel="noopener" target="_blank">Lập trình với Python</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#" rel="noopener" target="_blank">Tiếp thị kỹ thuật số</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#" rel="noopener" target="_blank">Học máy</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#" rel="noopener" target="_blank">Excel nâng cao</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#" rel="noopener" target="_blank">AutoCAD</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#" rel="noopener" target="_blank">Khoa học dữ liệu</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#" rel="noopener" target="_blank">Lập trình với C và C++</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#" rel="noopener" target="_blank">Mô hình tài chính và định giá</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-column" id="online-training-container">
+                        <div class="footer-list">
+                            <a href="#" id="online-training-heading-mobile" rel="noopener" target="_blank"><h5>Đào tạo
+                                trực tuyến <span class="offer">80% OFF</span>
+                            </h5>
+                            </a>
+                            <div class="footer-training-container">
+                                <div id="trainings_internshala_left">
+                                    <div class="footer-list-item">
+                                        <a href="#" rel="noopener" target="_blank">Phát triển web</a>
+                                    </div>
+                                    <div class="footer-list-item">
+                                        <a href="#" rel="noopener" target="_blank">Lập trình với Python</a>
+                                    </div>
+                                    <div class="footer-list-item">
+                                        <a href="#" rel="noopener" target="_blank">Tiếp thị kỹ thuật số</a>
+                                    </div>
+                                </div>
+                                <div id="trainings_internshala_center">
+                                    <div class="footer-list-item">
+                                        <a href="#" rel="noopener" target="_blank">Học máy</a>
+                                    </div>
+                                    <div class="footer-list-item">
+                                        <a href="#" rel="noopener" target="_blank">Excel nâng cao</a>
+                                    </div>
+                                    <div class="footer-list-item">
+                                        <a href="#" rel="noopener" target="_blank">AutoCAD</a>
+                                    </div>
+                                </div>
+                                <div id="trainings_internshala_right">
+                                    <div class="footer-list-item">
+                                        <a href="#" rel="noopener" target="_blank">Khoa học dữ liệu</a>
+                                    </div>
+                                    <div class="footer-list-item">
+                                        <a href="#" rel="noopener" target="_blank">Lập trình với C và C ++</a>
+                                    </div>
+                                    <div class="footer-list-item">
+                                        <a href="#" rel="noopener" target="_blank">Mô hình tài chính và định giá</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-column desktop-footer-1255" id="about-us-container">
+                        <div class="footer-list">
+                            <h5 class="d-none d-lg-block">Về Internshala</h5>
+                            <div class="footer-link-conatiner">
+                                <div id="about_internshala_left">
+                                    <div class="footer-list-item">
+                                        <a href="#">Về chúng tôi</a>
+                                    </div>
+                                    <div class="footer-list-item">
+                                        <a href="#">Chúng tôi đang tuyển dụng</a>
+                                    </div>
+                                    <div class="footer-list-item">
+                                        <a href="#">Thuê thực tập cho công ty bạn</a>
+                                    </div>
+                                    <div class="footer-list-item">
+                                        <a href="#" target="_blank">Nhật ký nhóm</a>
+                                    </div>
+                                    <div class="footer-list-item">
+                                        <a href="#" target="_blank">Blog</a>
+                                    </div>
+                                    <div class="footer-list-item">
+                                        <a href="#">Dịch vụ của chúng tôi</a>
+                                    </div>
+                                </div>
+                                <div id="about_internshala_center">
+                                    <div class="footer-list-item">
+                                        <a href="#">Điều khoản &amp;&amp;; Các điều kiện</a>
+                                    </div>
+                                    <div class="footer-list-item">
+                                        <a href="#">Riêng tư</a>
+                                    </div>
+                                    <div class="footer-list-item">
+                                        <a href="#">Liên hệ chúng tôi</a>
+                                    </div>
+                                </div>
+                                <div id="about_internshala_right"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-middle-section">
+                    <div class="footer-column desktop-footer-1255" id="jobs_by_places">
+                        <div class="footer-list">
+                            <h5>Công việc theo địa điểm</h5>
+                            <div class="footer-list-item">
+                                <a href="#" rel="noopener" target="_blank">Công việc ở Hà Nội</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#" rel="noopener" target="_blank">Công việc ở Huế</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#" rel="noopener" target="_blank">Công việc ở Đà Nẵng</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#" rel="noopener" target="_blank">Công việc ở Tp. Hồ Chí Minh</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#" rel="noopener" target="_blank">Công việc ở Hải Phòng</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-column desktop-footer-1255" id="jobs_by_stream">
+                        <div class="footer-list">
+                            <h5>Việc làm theo Luồng</h5>
+                            <div class="footer-list-item">
+                                <a href="#" rel="noopener" target="_blank">Công việc tiếp thị</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#" rel="noopener" target="_blank">Công việc viết nội dung</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#" rel="noopener" target="_blank">Công việc phát triển web</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#" rel="noopener" target="_blank">Công việc bán hàng</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#" rel="noopener" target="_blank">Công việc tài chính</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="trainings-container"></div>
+                    <div id="dummy-container"></div>
+                </div>
+                <div id="footer-about-us-container">
+                    <div class="footer-column" id="about_internshala_left">
+                        <div class="footer-list">
+                            <div class="footer-list-item">
+                                <a href="#">Về chúng tôi</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#">Chúng tôi đang tuyển dụng</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#">Thuê thực tập sinh cho công ty của bạn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-column" id="about_internshala_center">
+                        <div class="footer-list">
+                            <div class="footer-list-item">
+                                <a href="#" target="_blank">Nhật ký nhóm</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#" target="_blank">Blog</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#">Dịch vụ của chúng tôi</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-column" id="about_internshala_right">
+                        <div class="footer-list">
+                            <div class="footer-list-item">
+                                <a href="#">Điều khoản &amp;&amp; Các điều kiện</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#">Riêng tư</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="#">Liên hệ chúng tôi</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="dummy-container-1"></div>
+                    <div id="dummy-container-2"></div>
+                </div>
+                <div id="footer-bottom">
+                    <a href="#" target="_blank">
+                        <div class="footer-list-item" id="android_app_container">
+                            <i class="ic-24-playstore"></i> <span>Tải ứng dụng Android</span>
+                        </div>
+                    </a>
+                    <div id="social_media_container">
+                        <a class="social_media_link_footer" href="#" target="_blank"><i class="ic-24-instagram"></i></a>
+                        <a class="social_media_link_footer" href="#" target="_blank"><i class="ic-24-twitter"></i></a>
+                        <a class="social_media_link_footer" href="#" target="_blank"><img class="img-icon"
+                                                                                          src="./static/images/common/yt_icon_mono_dark.png"/></a>
+                        <a class="social_media_link_footer" href="#" target="_blank"><i class="ic-24-linkedin"></i></a>
+                    </div>
+                    <div class="" id="copyright">
+                        © Copyright 2022
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

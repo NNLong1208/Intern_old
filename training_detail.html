@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head id="head">
+    <link rel="icon" href="./star.png">
+    <title>Chi tiết đào tạo</title>
+    <script src="static/libraries/web_vitals/web-vitals.umd.js"></script>
+    <script src="static/js/build/react-vendor.js" type="text/javascript" defer ></script>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <link href="static/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="static/css/home/training_detail.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="header">
+    <div id="navbar-container" class="position-relative">
+
+        <div class="modal " id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <i class="ic-24-cross" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="user-menu-container">
+                            <div id="user-menu">
+                            </div>
+                        </div>
+                        <form role="form" id="modal-login-form" method="POST">
+                            <input type="hidden" name="csrf_test_name" value="07d4a0539d8f306794bdcf8d040027bb">
+                            <div class="form-group">
+                                <label for="email" class="control-label">Email</label>
+                                <input type="email" class="form-control" id="modal_email" tabindex="1" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="control-label">Password</label>
+                                <input type="password" class="form-control" id="modal_password" tabindex="2" name="password">
+                            </div>
+                            
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary" id="modal_login_submit" tabindex="3">Đăng nhập
+                                </button>
+                            </div>
+                            <div class="form-group new_to_internshala">
+                                <label>
+                                    Đăng ký ngay tại đây  (<a href="registration/student.html">Sinh viên</a> / <a
+                                        href="registration/employer.html">Công ty</a>)
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default navbar-expand-md" id="navbar">
+            <div class="container-fluid navbar-container max-width-container">
+                <div class="navbar-header" id="main-navbar-header">
+                    <button id="open-nav" type="button" class="border-0 navbar-toggler d-lg-none d-block"
+                            data-toggle="collapse" data-target="#dropdown">
+                        <i class='is-icon-menu'></i>
+                        <span class="offer_hamburger_dot d-block d-lg-none"></span>
+                    </button>
+                    <div class="navbar-header-item">
+                        <a class="navbar-brand" href="./index.html">
+                        <img id="logo_image" src="static/images/home/internships/categories/internstarslogotrans.png">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="collapse navbar-collapse" id="dropdown">
+                    <ul class="nav navbar-nav navbar-right ml-auto">
+
+                        <li id="login-list-item" class="d-none d-lg-block">
+                            <a>
+                                <button class="btn btn-secondary" data-toggle="modal"  data-target="#login-modal">Đăng nhập</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-bar-trigger mobile-search">
+                    <i class="is-icon-search"></i>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+</div>
+
+
+<img id="img0" src=".\static\images\training_detail\wallpaperflare.com_wallpaper.png">
+<section id="training-highlights" class="section highlights-feature">
+    <p class="heading">Điểm nổi bật của khóa học</p>
+    <div class="highlights">
+        <div class="highlight">
+            <div class="image-container">
+                <img src=".\static\images\home\internships\categories\workhome.png">
+            </div>
+            <div class="details">
+                <p class="sub-heading">Học trực tuyến</p>
+                <p class="description">Theo lịch trình của riêng bạn</p>
+            </div>
+        </div>
+        <div class="highlight">
+            <div class="image-container">
+                <img src=".\static\images\home\internships\categories\teacher.png">
+            </div>
+            <div class="details">
+                <p class="sub-heading">Giáo viên thân thiện</p>
+                <p class="description">Những chuyên gia hàng đầu</p>
+            </div>
+        </div>
+        <div class="highlight">
+            <div class="image-container">
+                <img src=".\static\images\home\internships\categories\mba.png">
+            </div>
+            <div class="details">
+                <p class="sub-heading">Hỗ trợ khởi nghiệp</p>
+                <p class="description">Để xây dựng sự nghiệp của bạn</p>
+            </div>
+        </div>
+        <div class="highlight">
+            <div class="image-container">
+                <img src=".\static\images\home\internships\categories\certificate.png">
+            </div>
+            <div class="details">
+                <p class="sub-heading">Chứng chỉ đào tạo</p>
+                <p class="description">từ Internstars</p>
+            </div>
+        </div>
+        <div class="highlight">
+            <div class="image-container">
+                <img src=".\static\images\home\internships\categories\content.png">
+            </div>
+            <div class="details">
+                <p class="sub-heading">1 dự án &amp; 5 bài tập</p>
+                <p class="description">For hands-on practice</p>
+            </div>
+        </div>
+        <div class="highlight">
+            <div class="image-container">
+                <img src=".\static\images\home\internships\categories\pay.png">
+            </div>
+            <div class="details">
+                <p class="sub-heading">Thanh toán thuận tiện</p>
+                <p class="description">Tìm hiểu thêm qua Q&amp;A forum</p>
+            </div>
+        </div>
+        <div class="highlight">
+            <div class="image-container">
+                <img src=".\static\images\home\internships\categories\engineer.png">
+            </div>
+            <div class="details">
+                <p class="sub-heading">Khởi đầu dễ dàng</p>
+                <p class="description">Không cần kiến thức nền tảng</p>
+            </div>
+        </div>
+        <div class="highlight">
+            <div class="image-container">
+                <img src=".\static\images\home\internships\categories\partime.png">
+            </div>
+            <div class="details">
+                <p class="sub-heading">Trong 8 tuần</p>
+                <p class="description">1 tiếng/ngày </p>
+            </div>
+        </div>
+        <div class="highlight">
+            <div class="image-container">
+                <img src=".\static\images\home\internships\categories\down.png">
+            </div>
+            <div class="details">
+                <p class="sub-heading">Download nội dung học</p>
+                <p class="description">Thười gian nhanh gọn</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="why-learn" class="section benefits">
+    <h2 class="heading"> Tại sao phải học lập trình web?</h2>
+    <div class="details">
+        <div class="points">
+            <div class="point">
+                <p class="sub-heading">Xây dựng các trang web tuyệt vời</p>
+                <p class="description">Mark Zuckerberg xây dựng Facebook. Sachin Bansal xây dựng Flipkart. Bạn sẽ xây dựng những gì?</p>
+            </div>
+            <div class="point">
+                <p class="sub-heading">Nhu cầu cao trên thị trường</p>
+                <p class="description">Với 1,7 tỷ trang web trên internet, đây là một trong những lựa chọn nghề nghiệp hấp dẫn nhất với mức lương trung bình hơn 20 triệu/tháng cho các nhà phát triển full stack theo Glassdoor.</p>
+            </div>
+            <div class="point">
+                <p class="sub-heading">Ăn-Ngủ-Code-Lặp lại</p>
+                <p class="description">Dù là mưa hay nắng, bạn luôn nghĩ đến coding.</p>
+            </div>
+        </div>
+        <div class="image-container-big">
+            <img id="img1" src="./static/images/training_detail/programming.png">
+        </div>
+    </div>
+</section>
+<section id="certificate" class="section benefits">
+    <div class="details">
+        <div class="image-container-big">
+            <img id="img1" src=".\static\images\training_detail\certification.png">
+        </div>
+        <div class="points">
+            <div class="point">
+                <p class="sub-heading"> Chứng nhận phát triển web được công nhận trong ngành</p>
+                <p class="description">Hơn 100.000 công ty sử dụng Internstars để tuyển dụng mỗi năm. Vì vậy, chứng chỉ từ Internstas được công nhận ở khắp mọi nơi.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="placement" class="section benefits web-development">
+    <p class="heading">Bạn sẽ được hỗ trợ những gì?</p>
+    <div class="details">
+        <div class="points">
+            <div class="point">
+                <p class="sub-heading">Đào tạo để chuẩn bị cho công việc</p>
+                <p class="description">Tìm hiểu cách xây dựng sơ yếu lý lịch của bạn và vượt qua các cuộc phỏng vấn</p>
+            </div>
+            <div class="point">
+                <p class="sub-heading">Lựa chọn thực tập và công việc</p>
+                <p class="description">Nhận thực tập và công việc mới hơn theo sở thích của bạn qua mail</p>
+            </div>
+            <div class="point">
+                <p class="sub-heading">Được vinh danh từ Internstars</p>
+                <p class="description">Những người có thành tích tốt nhất sẽ được đánh dấu trong các đơn xin việc và thực tập của họ trên Internstar</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img id="img1" src=".\static\images\training_detail\investment.png">
+        </div>
+    </div>
+</section>
+
+
+<section id="syllabus" class="section">
+    <h3 class="heading">Giáo trình đào tạo</h3>
+    <div class="brief">
+        <div class="info">
+            <div class="image-container">
+                <img src=".\static\images\training_detail\play-button.png">
+            </div>
+            <p class="sub-heading-inner">138 video hướng dẫn</p>
+        </div>
+        <div class="info">
+            <div class="image-container">
+                <img src=".\static\images\training_detail\task.png">
+            </div>
+            <p class="sub-heading-inner">5 bài tập</p>
+        </div>
+        <div class="info">
+            <div class="image-container">
+                <img src=".\static\images\training_detail\analytics.png">
+            </div>
+            <p class="sub-heading-inner">1 project</p>
+        </div>
+    </div>
+    <p class="sub-heading">Sau khi hoàn thành khóa đào tạo, bạn cũng có thể tải video về để tham khảo sau này</p>
+
+    <div id="accordion-syllabus" class="modules-and-topics-container">
+
+        <div class="module-and-topic-container ">
+            <div class="collapse-item border-top-0">
+                <div class="module-container collapse-title " data-toggle="collapse"
+                     data-target="#topics-container-collapse-1">
+                    <div class="module ">
+                        <h4 class="title">HTML</h4>
+                        <div class="info">
+                            <div class="no-of-topics">
+                                <i class="is-icon-file-text"></i>
+                                <span class="content">6 Topics</span>
+                            </div>
+                            <div class="no-of-demo-videos">
+                                <i class="is-icon-play-circle"></i>
+                                <span class="content">1 Demo video </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon-container">
+                        <i class="is-icon-chevron-down"></i>
+                        <i class="is-icon-chevron-up"></i>
+                    </div>
+                </div>
+                <div class="topics-container collapse show" id="topics-container-collapse-1"
+                     data-parent="#accordion-syllabus">
+                    <div class="topics">
+                        <div class="topic public-video" >
+                            <div class="icon">
+                                <i class="is-icon-play-circle"></i>
+                            </div>
+                            <div class="name">Video Tổng quan về Đào tạo</div>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Giới thiệu về đào tạo</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Các khái niệm cơ bản về phát triển web</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Thiết lập môi trường </span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Giới thiệu về HTML</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">HTML Tags</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Lists, Tables, và Forms</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="module-and-topic-container ">
+            <div class="collapse-item ">
+                <div class="module-container collapse-title collapsed" data-toggle="collapse"
+                     data-target="#topics-container-collapse-2">
+                    <div class="module ">
+                        <h4 class="title">CSS</h4>
+                        <div class="info">
+                            <div class="no-of-topics">
+                                <i class="is-icon-file-text"></i>
+                                <span class="content">11 Topics</span>
+                            </div>
+                            <div class="no-of-demo-videos">
+                                <i class="is-icon-play-circle"></i>
+                                <span class="content">1 Demo video </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon-container">
+                        <i class="is-icon-chevron-down"></i>
+                        <i class="is-icon-chevron-up"></i>
+                    </div>
+                </div>
+                <div class="topics-container collapse " id="topics-container-collapse-2"
+                     data-parent="#accordion-syllabus">
+                    <div class="topics">
+                        <div class="topic public-video" >
+                            <i class="is-icon-play-circle"></i>
+                            <span class="name">Giới thiệu về CSS</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">CSS Selectors</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Đơn vị: Chiều dài và Màu sắc</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Thuộc tính CSS</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Box Model</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Inspect Element</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Display</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Position</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Cấu trúc một trang web</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Flexbox</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Media Queries</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="module-and-topic-container ">
+            <div class="collapse-item ">
+                <div class="module-container collapse-title collapsed" data-toggle="collapse"
+                     data-target="#topics-container-collapse-3">
+                    <div class="module ">
+                        <h4 class="title">Bootstrap</h4>
+                        <div class="info">
+                            <div class="no-of-topics">
+                                <i class="is-icon-file-text"></i>
+                                <span class="content">3 Topics</span>
+                            </div>
+                            <div class="no-of-demo-videos">
+                                <i class="is-icon-play-circle"></i>
+                                <span class="content">1 Demo video </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon-container">
+                        <i class="is-icon-chevron-down"></i>
+                        <i class="is-icon-chevron-up"></i>
+                    </div>
+                </div>
+                <div class="topics-container collapse "  id="topics-container-collapse-3"
+                data-parent="#accordion-syllabus">
+                    <div class="topics">
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Giới thiệu về Bootstrap</span>
+                        </div>
+                        <div class="topic public-video" >
+                            <i class="is-icon-play-circle"></i>
+                            <span class="name">Layout</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Các thành phần khác</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="module-and-topic-container ">
+            <div class="collapse-item ">
+                <div class="module-container collapse-title collapsed" data-toggle="collapse"
+                     data-target="#topics-container-collapse-4">
+                    <div class="module ">
+                        <h4 class="title">DBMS</h4>
+                        <div class="info">
+                            <div class="no-of-topics">
+                                <i class="is-icon-file-text"></i>
+                                <span class="content">9 Topics</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon-container">
+                        <i class="is-icon-chevron-down"></i>
+                        <i class="is-icon-chevron-up"></i>
+                    </div>
+                </div>
+                <div class="topics-container collapse " id="topics-container-collapse-4"
+                     data-parent="#accordion-syllabus">
+                    <div class="topics">
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Giới thiệu về DBMS</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Các khái niệm và thuật ngữ cơ bản</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">SQL Queries - Database Related</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">SQL Queries - Tables Related</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">SQL Queries - Records Related</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Thiết kế Database</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Database Relationships</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Join Queries</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Nhập và xuất cơ sở Database</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="module-and-topic-container ">
+            <div class="collapse-item ">
+                <div class="module-container collapse-title collapsed" data-toggle="collapse"
+                     data-target="#topics-container-collapse-5">
+                    <div class="module last-child-padding">
+                        <h4 class="title">PHP</h4>
+                        <div class="info">
+                            <div class="no-of-topics">
+                                <i class="is-icon-file-text"></i>
+                                <span class="content">10 Topics</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon-container">
+                        <i class="is-icon-chevron-down"></i>
+                        <i class="is-icon-chevron-up"></i>
+                    </div>
+                </div>
+                <div class="topics-container collapse " id="topics-container-collapse-5"
+                     data-parent="#accordion-syllabus">
+                    <div class="topics">
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">PHP: Giới thiệu và cài đặt</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Biến và toán tử</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Câu điều kiện</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Vòng lặp</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Mảng</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Strings</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Hàm</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Form nhập</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Database liên kết</span>
+                        </div>
+                        <div class="topic ">
+                            <i class="is-icon-bullet"></i>
+                            <span class="name">Cookies và Sessions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+</section>
+<div id="course-projects-section" class="section">
+    <div class="course-projects-container ">
+        <h3 class="project-heading">Chi tiết Project khóa học</h3>
+        <div class="projects-container">
+            <div class="project-card  ">
+                <div class="header">
+                    <h4 class="title">Trang web nhà trọ sinh viên</h4>
+                    <p class="separator"></p>
+                </div>
+                <div class="body">
+                    <p class="description">Áp dụng kiến thức của bạn về HTML, CSS, Bootstrap, MySQL và PHP để tạo trang web lưu trú sinh viên hoạt động liền mạch trên các thiết bị khác nhau.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<section id="teachers-section" class="section max-width-container">
+    <div class="heading">Giáo viên</div>
+    <div class="teachers-container">
+        <div class="custom-carousel">
+            <div class="slider count-2">
+                <div class="slider-item">
+                    <div class="teacher-card h-100">
+                        <div class="image-wrapper w-100">
+                            <div class="image-container">
+                                <div class="lazy-load"
+                                     data-src="/cached_uploads/web-development/signup_page_media/teachers_images/anuj_kalbalia.png"
+                                     data-loading="eager" data-alt="Anuj Kalbalia"></div>
+                            </div>
+                        </div>
+                        <div class="teacher-info-container h-100">
+                            <p class="name">Tùng Lâm</p>
+                            <p class="designation">Người sáng lập, Ungineering</p>
+                            <div class="separator"></div>
+                            <p class="about-info">Hơn 10 năm kinh nghiệm xây dựng các giải pháp back-end cho các tổ chức danh tiếng như IBM và Internstars</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="teacher-card h-100">
+                        <div class="image-wrapper w-100">
+                            <div class="image-container">
+                                <div class="lazy-load"
+                                     data-src="/cached_uploads/web-development/signup_page_media/teachers_images/aditya_sood.png"
+                                     data-loading="eager" data-alt="Aditya Sood"></div>
+                            </div>
+                        </div>
+                        <div class="teacher-info-container h-100">
+                            <p class="name">Anh Minh</p>
+                            <p class="designation">Giảng dạy thiết kế</p>
+                            <div class="separator"></div>
+                            <p class="about-info">Hơn 5 năm kinh nghiệm, bao gồm cả trong ngành EdTech với tư cách là nhà thiết kế trải nghiệm học tập. Đã từng làm trợ lý giáo sư và xuất bản một số bài báo khoa học.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="feedbacks-section" class="section max-width-container">
+    <div class="heading">Reviews từ học viên</div>
+    <div class="ratings-container">
+        <div class="heading">XẾP HẠNG </div>
+        <div class="rating-and-stars-container">
+            <span class="rating">4.1</span>
+            <span class="stars-container">
+            <i class="is-icon-star-filled-s color"></i>
+            <i class="is-icon-star-filled-s color"></i>
+            <i class="is-icon-star-filled-s color"></i>
+            <i class="is-icon-star-filled-s color"></i>
+            <i class="is-icon-star-filled-s non-color"></i>
+            <i class="is-icon-star-half-diagonal color"></i>
+             </span>
+        </div>
+    </div>
+    <div class="feedbacks-container">
+        <div class="custom-carousel">
+            <div class="slider">
+                <div class="slider-item">
+                    <div class="feedbacks-card-container h-100">
+                        <div class="feedbacks-card h-100">
+                            <div>
+                                <div class="rating-and-stars-container">
+                                    <span class="rating">4.0</span>
+                                    <span class="stars-container">
+                                    <i class="is-icon-star-filled-s color"></i>
+                                    <i class="is-icon-star-filled-s color"></i>
+                                    <i class="is-icon-star-filled-s color"></i>
+                                    <i class="is-icon-star-filled-s color"></i>
+                                    <i class="is-icon-star-filled-s non-color"></i>
+                                    </span>
+                                </div>
+                                <p class="feedback-body">noice.</p>
+                            </div>
+                            <div class="image-and-details-conatiner d-flex align-items-center">
+                                <div class="image-container">
+                                    <div class="lazy-load" data-loading="eager"
+                                         data-src="/cached_uploads/web-development/signup_page_media/feedback_givers_images/harshit.png"
+                                         data-alt="Harshit"></div>
+                                </div>
+                                <div class="feedback-giver-info-container">
+                                    <div class="name">abc</div>
+                                    <p class="institute">Viện Khoa học và Công nghệ </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="feedbacks-card-container h-100">
+                        <div class="feedbacks-card h-100">
+                            <div>
+                                <div class="rating-and-stars-container">
+                                    <span class="rating">4.0</span>
+                                    <span class="stars-container">
+                                    <i class="is-icon-star-filled-s color"></i>
+                                    <i class="is-icon-star-filled-s color"></i>
+                                    <i class="is-icon-star-filled-s color"></i>
+                                    <i class="is-icon-star-filled-s color"></i>
+                                    <i class="is-icon-star-filled-s non-color"></i>
+                                    </span>
+                                </div>
+                                <p class="feedback-body">noice.</p>
+                            </div>
+                            <div class="image-and-details-conatiner d-flex align-items-center">
+                                <div class="image-container">
+                                    <div class="lazy-load" data-loading="eager"
+                                         data-src="/cached_uploads/web-development/signup_page_media/feedback_givers_images/harshit.png"
+                                         data-alt="Harshit"></div>
+                                </div>
+                                <div class="feedback-giver-info-container">
+                                    <div class="name">abc</div>
+                                    <p class="institute">Viện Khoa học và Công nghệ </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="feedbacks-card-container h-100">
+                        <div class="feedbacks-card h-100">
+                            <div>
+                                <div class="rating-and-stars-container">
+                                    <span class="rating">4.0</span>
+                                    <span class="stars-container">
+                                    <i class="is-icon-star-filled-s color"></i>
+                                    <i class="is-icon-star-filled-s color"></i>
+                                    <i class="is-icon-star-filled-s color"></i>
+                                    <i class="is-icon-star-filled-s color"></i>
+                                    <i class="is-icon-star-filled-s non-color"></i>
+                                    </span>
+                                </div>
+                                <p class="feedback-body">noice.</p>
+                            </div>
+                            <div class="image-and-details-conatiner d-flex align-items-center">
+                                <div class="image-container">
+                                    <div class="lazy-load" data-loading="eager"
+                                         data-src="/cached_uploads/web-development/signup_page_media/feedback_givers_images/harshit.png"
+                                         data-alt="Harshit"></div>
+                                </div>
+                                <div class="feedback-giver-info-container">
+                                    <div class="name">abc</div>
+                                    <p class="institute">Viện Khoa học và Công nghệ </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<div id="footer">
+    <div class="max-width-container">
+        <div>
+            <div class="footer-inner">
+                <div class="inner-footer d-none d-lg-block a1">
+                    <div class="menu-heading">
+                        <p>Lập trình</p>
+                    </div>
+                    <div class="items">
+                        <div>
+                            <a href="/web-development-course/?tracking_source=trainings-footer-programming" style="">
+                                Lập trình Web 
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/python-course/?tracking_source=trainings-footer-programming" style="">
+                                Python
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/c-plus-plus-course/?tracking_source=trainings-footer-programming" style="">
+                                C C++
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/java-course/?tracking_source=trainings-footer-programming" style="">
+                                Core Java
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/android-course/?tracking_source=trainings-footer-programming" style="">
+                                Android App 
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/hacking-course/?tracking_source=trainings-footer-programming" style="">
+                                Ethical Hacking
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/react-course/?tracking_source=trainings-footer-programming" style="">
+                                React
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/data-structures-algorithms-course/?tracking_source=trainings-footer-programming"
+                               style="">
+                                Kiến trúc dữ liệu
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/clinical-trials-analysis-reporting-course/?tracking_source=trainings-footer-programming"
+                               style="">
+                               Phân tích thử nghiệm lâm sàng
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/blockchain-course/?tracking_source=trainings-footer-programming" style="">
+                                Blockchain
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/matlab-course/?tracking_source=trainings-footer-programming" style="">
+                                MATLAB
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/software-testing-course/?tracking_source=trainings-footer-programming" style="">
+                                Kiểm thử
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/aws-course/?tracking_source=trainings-footer-programming" style="">
+                                Điện toán đám mây
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/plc-programming-course/?tracking_source=trainings-footer-programming" style="">
+                                PLC 
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/product-management-course/?tracking_source=trainings-footer-programming" style="">
+                               Quản lí sản phẩm
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/nodejs-course/?tracking_source=trainings-footer-programming" style="">
+                                Node JS
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/sas-programming-course/?tracking_source=trainings-footer-programming" style="">
+                                SAS 
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/angular-course/?tracking_source=trainings-footer-programming" style="">
+                                Angular
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/robotic-process-automation-course/?tracking_source=trainings-footer-programming"
+                               style="">
+                                Tự động hóa
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/ar-vr-course/?tracking_source=trainings-footer-programming" style="">
+                                AR/VR
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/git-course/?tracking_source=trainings-footer-programming" style="">
+                                Git GitHub
+                            </a>
+                        </div>
+                        <div>
+                            <a>
+                                Full Stack 
+                                <span class="tag tag-xs" style="margin-bottom: 3px;">HOT</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner-footer d-none d-lg-block a2">
+                    <div class="menu-heading">
+                        <p>Kinh doanh và quản trị</p>
+                    </div>
+                    <div class="items">
+                        <div>
+                            <a href="/digital-marketing-course/?tracking_source=trainings-footer-business-&amp;-management"
+                               style="">
+                                Digital Marketing
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/excel-course/?tracking_source=trainings-footer-business-&amp;-management"
+                               style="">
+                                Excel nâng cao
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/financial-modeling-valuation-course/?tracking_source=trainings-footer-business-&amp;-management"
+                               style="">
+                               Mô hình hóa và định giá tài chính
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/business-analytics-course/?tracking_source=trainings-footer-business-&amp;-management"
+                               style="">
+                               Phân tích kinh doanh
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/hr-course/?tracking_source=trainings-footer-business-&amp;-management" style="">
+                                Quản trị nhân sự
+
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/business-communication-course/?tracking_source=trainings-footer-business-&amp;-management"
+                               style="">
+                               Kỹ năng giao tiếp kinh doanh
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/stock-market-trading-training/?tracking_source=trainings-footer-business-&amp;-management"
+                               style="">
+                               Giao dịch thị trường chứng khoán
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/tally-course/?tracking_source=trainings-footer-business-&amp;-management"
+                               style="">
+                               Kiếm toán
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/sql-data-analytics-course/?tracking_source=trainings-footer-business-&amp;-management"
+                               style="">
+                               SQL phân tích dữ liệu
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="inner-footer d-none d-lg-block a3">
+                    <div class="menu-heading">
+                        <p>Kỹ thuật</p>
+                    </div>
+                    <div class="items">
+                        <div>
+                            <a href="/autocad-course/?tracking_source=trainings-footer-core-engineering" style="">
+                                AutoCAD
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/vlsi-design-course/?tracking_source=trainings-footer-core-engineering" style="">
+                                VLSI Design
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/solidworks-course/?tracking_source=trainings-footer-core-engineering" style="">
+                                SOLIDWORKS
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/matlab-course/?tracking_source=trainings-footer-core-engineering" style="">
+                                MATLAB
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/ansys-course/?tracking_source=trainings-footer-core-engineering" style="">
+                                Ansys
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/catia-course/?tracking_source=trainings-footer-core-engineering" style="">
+                                CATIA
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/staad-pro-course/?tracking_source=trainings-footer-core-engineering" style="">
+                                STAAD Pro
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/plc-programming-course/?tracking_source=trainings-footer-core-engineering"
+                               style="">
+                                PLC 
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/arduino-course/?tracking_source=trainings-footer-core-engineering" style="">
+                                Arduino
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/autocad-three-d-course/?tracking_source=trainings-footer-core-engineering"
+                               style="">
+                                AutoCAD 3D
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/advanced-solidworks-course/?tracking_source=trainings-footer-core-engineering"
+                               style="">
+                                SOLIDWORKS
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="inner-footer d-none d-lg-block a4">
+                    <div class="menu-heading">
+                        <p>Khoa học dữ liệu</p>
+                    </div>
+                    <div class="items">
+                        <div>
+                            <a href="/machine-learning-course/?tracking_source=trainings-footer-data-science" style="">
+                                Machine Learning
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/data-science-beginner-course/?tracking_source=trainings-footer-data-science"
+                               style="">
+                               Khoa học dữ liệu
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/business-analytics-course/?tracking_source=trainings-footer-data-science"
+                               style="">
+                               Phân tích kinh doanh
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/clinical-trials-analysis-reporting-course/?tracking_source=trainings-footer-data-science"
+                               style="">
+                               Phân tích thử nghiệm lâm sàng
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/sql-data-analytics-course/?tracking_source=trainings-footer-data-science"
+                               style="">
+                                SQL
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/power-bi-course/?tracking_source=trainings-footer-data-science" style="">
+                                Power BI
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/deep-learning-course/?tracking_source=trainings-footer-data-science" style="">
+                                Deep Learning
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/tableau-course/?tracking_source=trainings-footer-data-science" style="">
+                                Tableau
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/sas-programming-course/?tracking_source=trainings-footer-data-science" style="">
+                                SAS 
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/natural-language-processing-course/?tracking_source=trainings-footer-data-science"
+                               style="">
+                                Ngôn ngữ tự nhiên
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/statistics-course/?tracking_source=trainings-footer-data-science" style="">
+                                Thống kê khoa học dữ liệu
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="inner-footer d-none d-lg-block a5">
+                    <div class="menu-heading">
+                        <p>Thiết kế</p>
+                    </div>
+                    <div class="items">
+                        <div>
+                            <a href="/ui-ux-design-course/?tracking_source=trainings-footer-design" style="">
+                                UI/UX Design
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/graphic-design-course/?tracking_source=trainings-footer-design" style="">
+                                Graphic Design
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/video-editing-course/?tracking_source=trainings-footer-design" style="">
+                                Video Editing
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/animation-course/?tracking_source=trainings-footer-design" style="">
+                                Animation
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/digital-art-course/?tracking_source=trainings-footer-design" style="">
+                                Digital Art
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/wordpress-course/?tracking_source=trainings-footer-design" style="">
+                                WordPress
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/colour-theory-course/?tracking_source=trainings-footer-design" style="">
+                                Lý thuyết màu sắc 
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/adobe-illustrator-course/?tracking_source=trainings-footer-design" style="">
+                                Adobe Illustrator
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner-footer d-none d-lg-block a6">
+                    <div class="menu-heading">
+                        <p>Nghệ thuật sáng tạo</p>
+                    </div>
+                    <div class="items">
+                        <div>
+                            <a href="/creative-writing-course/?tracking_source=trainings-footer-creative-arts" style="">
+                                Văn bản sáng tạo
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/photography-course/?tracking_source=trainings-footer-creative-arts" style="">
+                                Nhiếp ảnh
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/guitar-course/?tracking_source=trainings-footer-creative-arts" style="">
+                                Guitar
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/calligraphy-course/?tracking_source=trainings-footer-creative-arts" style="">
+                                Thư pháp
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/acting-course/?tracking_source=trainings-footer-creative-arts" style="">
+                                Diễn xuất
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="inner-footer d-none d-lg-block a8">
+                    <div class="menu-heading">
+                        <p>Khởi nghiệp</p>
+                    </div>
+                    <div class="items">
+                        <div>
+                            <a href="/business-communication-course/?tracking_source=trainings-footer-career-development"
+                               style="">
+                               Kỹ năng giao tiếp kinh doanh
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/ppt-course/?tracking_source=trainings-footer-career-development" style="">
+                                Thực tập và Chuẩn bị việc làm
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/how-to-ace-coding-interviews-course/?tracking_source=trainings-footer-career-development"
+                               style="">
+                               Cách phỏng vấn mã hóa ACE
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/quantitative-aptitude-course/?tracking_source=trainings-footer-career-development"
+                               style="">
+                               Khả năng định lượng
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner-footer d-none d-lg-block a9">
+                    <div class="menu-heading">
+                        <p>Ngành kiến ​​​​trúc</p>
+                    </div>
+                    <div class="items">
+                        <div>
+                            <a href="/autocad-course/?tracking_source=trainings-footer-architecture" style="">
+                                AutoCAD
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/revit-course/?tracking_source=trainings-footer-architecture" style="">
+                                Revit
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/autocad-three-d-course/?tracking_source=trainings-footer-architecture" style="">
+                                AutoCAD 3D
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner-footer d-none d-lg-block a10">
+                    <div class="menu-heading">
+                        <p>Chuyên ngành</p>
+                    </div>
+                    <div class="items">
+                        <div>
+                            <a href="/full-stack-web-development-specialization/?tracking_source=trainings-footer-specializations"
+                               style="display:flex; align-items: flex-end; justify-content:space-between;">
+                                Lập trình Full Stack 
+                                <span class="tag tag-xs" style="margin-bottom: 3px;">NEW</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/data-science-specialization/?tracking_source=trainings-footer-specializations"
+                               style="display:flex; align-items: flex-end; justify-content:space-between;">
+                                Khoa học dữ liệu
+                                <span class="tag tag-xs" style="margin-bottom: 3px;">NEW</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/human-resource-management-specialization/?tracking_source=trainings-footer-specializations"
+                               style="display:flex; align-items: flex-end; justify-content:space-between;">
+                                Quản lý nguồn nhân sự
+                                <span class="tag tag-xs" style="margin-bottom: 3px;">NEW</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/digital-marketing-specialization/?tracking_source=trainings-footer-specializations"
+                               style="display:flex; align-items: flex-end; justify-content:space-between;">
+                                Marketing kỹ thuật số
+                                <span class="tag tag-xs" style="margin-bottom: 3px;">NEW</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div id="footer-bottom">
+                <div class="item_a">
+                    <a href="https://internshala.com/refund_cancellation_policy" target="_blank">Chính sách hoàn tiền</a>
+                </div>
+                <div class="item_b">
+                    <a href="/help_center">Trung tâm trợ giúp</a>
+                </div>
+                <div class="item_c">
+                    <a href="https://docs.google.com/forms/d/1X383Hc0A4iKhOscCZTIfO8DakeNQK9D9qAqCBzl_Ugk/viewform"
+                       target="_blank">Trở thành Đối tác đào tạo của chúng tôi</a>
+                </div>
+                
+                <div class="item_e">
+                    <a href="https://internshala.com/terms#student" target="_blank">Điều khoản và điều kiện</a>
+                </div>
+                <div class="item_f">
+                    <a href="https://internshala.com/privacy" target="_blank">Chính sách bảo mật</a>
+                </div>
+                <div class="item_g">
+                    <a href="https://internshala.com/" target="_blank">Internstar</a>
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

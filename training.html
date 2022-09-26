@@ -1,0 +1,2619 @@
+<!DOCTYPE html>
+<head>
+    <title>Đào tạo</title>
+    <link rel="icon" href="./star.png">
+    <link rel="preload" as="font" href="static/fonts/inter/Inter-var.woff2" type="font/woff2">
+    <link rel="preload" as="font" href="static/fonts/internshala_icon_fonts/internshala-icons.woff2" type="font/woff2">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <link href="static/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="static/css/home/trainning.css" rel="stylesheet" type="text/css"/>
+
+    <script src="static/js/build/react-vendor.js" type="text/javascript" defer></script>
+    <script src="static/js/build/home.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+<div id="header">
+    <div id="navbar-container" class="position-relative">
+        
+        <div class="modal " id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <i class="ic-24-cross" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="user-menu-container">
+                            <div id="user-menu">
+                            </div>
+                        </div>
+                        <form role="form" id="modal-login-form" method="POST">
+                            <input type="hidden" name="csrf_test_name" value="07d4a0539d8f306794bdcf8d040027bb">
+                            <div class="form-group">
+                                <label for="email" class="control-label">Email</label>
+                                <input type="email" class="form-control" id="modal_email" tabindex="1" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="control-label">Password</label>
+                                <input type="password" class="form-control" id="modal_password" tabindex="2" name="password">
+                            </div>
+                            <div class="forgot_password">
+                                <a href="login/forgot_password.html" id="forgot-password">Quên mật khẩu?</a>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary" id="modal_login_submit" tabindex="3">Đăng nhập
+                                </button>
+                            </div>
+                            <div class="form-group new_to_internshala">
+                                <label>
+                                    Đăng ký ngay tại đây  (<a href="registration/student.html">Sinh viên</a> / <a
+                                        href="registration/employer.html">Công ty</a>)
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default navbar-expand-md" id="navbar">
+            <div class="container-fluid navbar-container max-width-container">
+                <div class="navbar-header" id="main-navbar-header">
+                    <button id="open-nav" type="button" class="border-0 navbar-toggler d-lg-none d-block"
+                            data-toggle="collapse" data-target="#dropdown">
+                        <i class='is-icon-menu'></i>
+                        <span class="offer_hamburger_dot d-block d-lg-none"></span>
+                    </button>
+                    <div class="navbar-header-item">
+                        <a class="navbar-brand" href="./index.html">
+                        <img id="logo_image" src="static/images/home/internships/categories/internstarslogotrans.png">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="collapse navbar-collapse" id="dropdown">
+                    <ul class="nav navbar-nav navbar-right ml-auto">
+
+                        <li id="login-list-item" class="d-none d-lg-block">
+                            <a>
+                                <button class="btn btn-secondary" data-toggle="modal"  data-target="#login-modal">Đăng nhập</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-bar-trigger mobile-search">
+                    <i class="is-icon-search"></i>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+</div>
+
+
+<div id="content" class="content-no-padding">
+
+    <div id="banners_container">
+            <div id="banners">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="static/images/home/slide_show3.png" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="static/images/home/slide_show2.png" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="static/images/home/slide_show1.png" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            
+            </div>
+        
+        </div>
+
+    <p class="heading" id="know-more">Các khóa đào tạo trực tuyến</p>
+    <div id="courses-container" class="max-width-container">
+        <div id="page-tracking-param" class="d-none" data-page-tracking-param="hp"></div>
+        <div id="MostPopular" class="category-container">
+            <div class="category-heading">
+                Phổ biến
+                <span class="course-count">(11)</span>
+            </div>
+            <div class="custom-carousel" data-category="Most_Popular">
+                <div class="slider">
+                    <div class="slider-item">
+                        <a href="">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\web.png"
+                                         data-alt="Web Development"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Lập trình web</h4>
+                                    <p class="course-caption">Học lập trình web với những chuyên gia hàng đầu</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                        8 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/python-course/?tracking_source=trainings-cards-most-popular">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\python.png   "
+                                         data-alt="Programming with Python"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Lập trình python</h4>
+                                    <p class="course-caption">Học lập trình python với những chuyên gia hàng đầu</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                        8 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/digital-marketing-course/?tracking_source=trainings-cards-most-popular">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\excel.png"
+                                         data-alt="Digital Marketing"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Excel nâng cao</h4>
+                                    <p class="course-caption">Học excel với những câu lệnh nâng cao</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                        8 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/machine-learning-course/?tracking_source=trainings-cards-most-popular">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\cad.png"
+                                         data-alt="Machine Learning"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">AutoCAD</h4>
+                                    <p class="course-caption">Thiết kế những bản mẫu 2D, 3D</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                        10 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/excel-course/?tracking_source=trainings-cards-most-popular">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\cad.png"
+                                         data-alt="Machine Learning"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">AutoCAD</h4>
+                                    <p class="course-caption">Thiết kế những bản mẫu 2D, 3D</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                        10 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/autocad-course/?tracking_source=trainings-cards-most-popular">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\cad.png"
+                                         data-alt="Machine Learning"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">AutoCAD</h4>
+                                    <p class="course-caption">Thiết kế những bản mẫu 2D, 3D</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                        10 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/data-science-beginner-course/?tracking_source=trainings-cards-most-popular">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\cad.png"
+                                         data-alt="Machine Learning"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">AutoCAD</h4>
+                                    <p class="course-caption">Thiết kế những bản mẫu 2D, 3D</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                        10 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/c-plus-plus-course/?tracking_source=trainings-cards-most-popular">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\cad.png"
+                                         data-alt="Machine Learning"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">AutoCAD</h4>
+                                    <p class="course-caption">Thiết kế những bản mẫu 2D, 3D</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                        10 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/financial-modeling-valuation-course/?tracking_source=trainings-cards-most-popular">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\cad.png"
+                                         data-alt="Machine Learning"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">AutoCAD</h4>
+                                    <p class="course-caption">Thiết kế những bản mẫu 2D, 3D</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                        10 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/android-course/?tracking_source=trainings-cards-most-popular">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\cad.png"
+                                         data-alt="Machine Learning"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">AutoCAD</h4>
+                                    <p class="course-caption">Thiết kế những bản mẫu 2D, 3D</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                        10 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/full-stack-web-development-specialization/?tracking_source=trainings-cards-most-popular">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\cad.png"
+                                         data-alt="Machine Learning"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">AutoCAD</h4>
+                                    <p class="course-caption">Thiết kế những bản mẫu 2D, 3D</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                        10 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="navigation-container  ">
+                    <div class="navigation">
+                        <i class="control left disabled" aria-hidden="true"></i>
+                        <div class="indicators-container">
+                            <div class='indicators' id="indicators-Most_Popular">
+                            </div>
+                        </div>
+                        <i class="control right" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Programming" class="category-container">
+            <div class="category-heading">
+                Lập trình
+                <span class="course-count">(24)</span>
+            </div>
+            <div class="custom-carousel" data-category="Programming">
+                <div class="slider">
+                    <div class="slider-item">
+                        <a href="/web-development-course/?tracking_source=trainings-cards-programming">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\c.png"
+                                         data-alt="Web Development"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Lập trình C++</h4>
+                                    <p class="course-caption">Học lập trình C++ cùng các chuyên gia hàng đầu</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                        8 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/python-course/?tracking_source=trainings-cards-programming">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\python.png   "
+                                         data-alt="Programming with Python"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Lập trình python</h4>
+                                    <p class="course-caption">Học lập trình python với những chuyên gia hàng đầu</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                        8 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/c-plus-plus-course/?tracking_source=trainings-cards-programming">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\java.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Lập trình Java</h4>
+                                    <p class="course-caption">Lập trình Java từ những bước đơn giản</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                            8 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/java-course/?tracking_source=trainings-cards-programming">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\java.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Lập trình Java</h4>
+                                    <p class="course-caption">Lập trình Java từ những bước đơn giản</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                            8 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/android-course/?tracking_source=trainings-cards-programming">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\java.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Lập trình Java</h4>
+                                    <p class="course-caption">Lập trình Java từ những bước đơn giản</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                            8 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/hacking-course/?tracking_source=trainings-cards-programming">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\java.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Lập trình Java</h4>
+                                    <p class="course-caption">Lập trình Java từ những bước đơn giản</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                            8 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/react-course/?tracking_source=trainings-cards-programming">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\java.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Lập trình Java</h4>
+                                    <p class="course-caption">Lập trình Java từ những bước đơn giản</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                            8 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/data-structures-algorithms-course/?tracking_source=trainings-cards-programming">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\java.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Lập trình Java</h4>
+                                    <p class="course-caption">Lập trình Java từ những bước đơn giản</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                            8 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/clinical-trials-analysis-reporting-course/?tracking_source=trainings-cards-programming">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\java.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Lập trình Java</h4>
+                                    <p class="course-caption">Lập trình Java từ những bước đơn giản</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                            8 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="navigation-container  ">
+                    <div class="navigation">
+                        <i class="control left disabled" aria-hidden="true"></i>
+                        <div class="indicators-container">
+                            <div class='indicators' id="indicators-Programming">
+                            </div>
+                        </div>
+                        <i class="control right" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="BusinessManagement" class="category-container">
+            <div class="category-heading">
+                Kinh doanh &amp; Quản trị
+                <span class="course-count">(14)</span>
+            </div>
+            <div class="custom-carousel" data-category="Business &amp; Management">
+                <div class="slider">
+                    <div class="slider-item">
+                        <a href="/digital-marketing-course/?tracking_source=trainings-cards-business-&amp;-management">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\internships\categories\media.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Tiếp thị kĩ thuật số</h4>
+                                    <p class="course-caption">Học về SEO, Công cụ kĩ thuật số, Phân tích web và hơn nữa</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                        8 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/excel-course/?tracking_source=trainings-cards-business-&amp;-management">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\excel.png"
+                                         data-alt="Digital Marketing"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Excel nâng cao</h4>
+                                    <p class="course-caption">Học excel với những câu lệnh nâng cao</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                        8 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/financial-modeling-valuation-course/?tracking_source=trainings-cards-business-&amp;-management">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\internships\categories\mba.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Mô hình hóa và định giá tài chính</h4>
+                                    <p class="course-caption">Tìm hiểu các ký thuật định giá tài chính và mô hình doanh nghiệp</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                        6 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="slider-item">
+                        <a href="/hr-course/?tracking_source=trainings-cards-business-&amp;-management">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\internships\categories\human.png" ></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Quản lý nhân sự
+                                    </h4>
+                                    <p class="course-caption">Thành thạo quản lý nguồn nhân lực trong công việc của bạn</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Duration:<span style="font-weight: 500">
+                                                                                        6 weeks
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Know more
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/hr-course/?tracking_source=trainings-cards-business-&amp;-management">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\internships\categories\human.png" ></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Quản lý nhân sự
+                                    </h4>
+                                    <p class="course-caption">Thành thạo quản lý nguồn nhân lực trong công việc của bạn</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                        6 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/hr-course/?tracking_source=trainings-cards-business-&amp;-management">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\internships\categories\human.png" ></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Quản lý nhân sự
+                                    </h4>
+                                    <p class="course-caption">Thành thạo quản lý nguồn nhân lực trong công việc của bạn</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                        6 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/hr-course/?tracking_source=trainings-cards-business-&amp;-management">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\internships\categories\human.png" ></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Quản lý nhân sự
+                                    </h4>
+                                    <p class="course-caption">Thành thạo quản lý nguồn nhân lực trong công việc của bạn</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                        6 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/hr-course/?tracking_source=trainings-cards-business-&amp;-management">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\internships\categories\human.png" ></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Quản lý nhân sự
+                                    </h4>
+                                    <p class="course-caption">Thành thạo quản lý nguồn nhân lực trong công việc của bạn</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                        6 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="navigation-container  ">
+                    <div class="navigation">
+                        <i class="control left disabled" aria-hidden="true"></i>
+                        <div class="indicators-container">
+                            <div class='indicators' id="indicators-Business &amp; Management">
+                            </div>
+                        </div>
+                        <i class="control right" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="CoreEngineering" class="category-container">
+            <div class="category-heading">
+                Kỹ thuật
+                <span class="course-count">(20)</span>
+            </div>
+            <div class="custom-carousel" data-category="Core Engineering">
+                <div class="slider">
+                    <div class="slider-item">
+                        <a href="/autocad-course/?tracking_source=trainings-cards-core-engineering">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\cad.png" ></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">AutoCAD</h4>
+                                    <p class="course-caption">Học cách xây dựng mô hình 2D và 3D bằng AutoCAD</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                        6 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/vlsi-design-course/?tracking_source=trainings-cards-core-engineering">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\matlab.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">MATLAB</h4>
+                                    <p class="course-caption">Làm chủ nền tảng được sử dụng bởi hàng triệu kỹ sư và các nhà khoa học</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">
+                                                                                        6 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    
+                    
+                    <div class="slider-item">
+                        <a href="/catia-course/?tracking_source=trainings-cards-core-engineering">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\catia.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">CATIA</h4>
+                                    <p class="course-caption"> Làm chủ thế giới phần mềm thiết kế hàng đầu được sử dụng bởi Airbus, BMW, v.v.</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thòi gian học:<span style="font-weight: 500">
+                                                                                        6 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="slider-item">
+                        <a href="/plc-programming-course/?tracking_source=trainings-cards-core-engineering">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\plc.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Lập trình PLC</h4>
+                                    <p class="course-caption">Xây dựng các chương trình PLC hiệu quả để tự động hóa công nghiệp dự án!</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thòi gian học:<span style="font-weight: 500">
+                                                                                        6 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/plc-programming-course/?tracking_source=trainings-cards-core-engineering">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\plc.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Lập trình PLC</h4>
+                                    <p class="course-caption">Xây dựng các chương trình PLC hiệu quả để tự động hóa công nghiệp dự án!</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thòi gian học:<span style="font-weight: 500">
+                                                                                        6 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/plc-programming-course/?tracking_source=trainings-cards-core-engineering">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\plc.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Lập trình PLC</h4>
+                                    <p class="course-caption">Xây dựng các chương trình PLC hiệu quả để tự động hóa công nghiệp dự án!</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thòi gian học:<span style="font-weight: 500">
+                                                                                        6 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/plc-programming-course/?tracking_source=trainings-cards-core-engineering">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\plc.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Lập trình PLC</h4>
+                                    <p class="course-caption">Xây dựng các chương trình PLC hiệu quả để tự động hóa công nghiệp dự án!</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thòi gian học:<span style="font-weight: 500">
+                                                                                        6 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/plc-programming-course/?tracking_source=trainings-cards-core-engineering">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\plc.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Lập trình PLC</h4>
+                                    <p class="course-caption">Xây dựng các chương trình PLC hiệu quả để tự động hóa công nghiệp dự án!</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thòi gian học:<span style="font-weight: 500">
+                                                                                        6 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/plc-programming-course/?tracking_source=trainings-cards-core-engineering">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\plc.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Lập trình PLC</h4>
+                                    <p class="course-caption">Xây dựng các chương trình PLC hiệu quả để tự động hóa công nghiệp dự án!</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thòi gian học:<span style="font-weight: 500">
+                                                                                        6 tuần
+                                                                                        </span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="navigation-container  ">
+                    <div class="navigation">
+                        <i class="control left disabled" aria-hidden="true"></i>
+                        <div class="indicators-container">
+                            <div class='indicators' id="indicators-Core Engineering">
+                            </div>
+                        </div>
+                        <i class="control right" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="DataScience" class="category-container">
+            <div class="category-heading">
+                Khoa học dữ liệu
+                <span class="course-count">(12)</span>
+            </div>
+            <div class="custom-carousel" data-category="Data Science">
+                <div class="slider">
+                    <div class="slider-item">
+                        <a href="">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\mclearn.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Machine Learning</h4>
+                                    <p class="course-caption">Học Machine Learning từ đầu và thực hiện bước đầu tiên hướng tới AI</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">6 tuần</span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\internships\categories\data.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Khoa học dữ liệu</h4>
+                                    <p class="course-caption">Học về ABCs của Data Science</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">6 tuần</span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/business-analytics-course/?tracking_source=trainings-cards-data-science">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\internships\categories\mba.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Phân tích kinh doanh</h4>
+                                    <p class="course-caption">Làm chủ kỹ năng phân tích dữ liệu kinh doanh một cách dễ dàng!</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">6 tuần</span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/business-analytics-course/?tracking_source=trainings-cards-data-science">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\internships\categories\mba.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Phân tích kinh doanh</h4>
+                                    <p class="course-caption">Làm chủ kỹ năng phân tích dữ liệu kinh doanh một cách dễ dàng!</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">6 tuần</span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/business-analytics-course/?tracking_source=trainings-cards-data-science">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\internships\categories\mba.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Phân tích kinh doanh</h4>
+                                    <p class="course-caption">Làm chủ kỹ năng phân tích dữ liệu kinh doanh một cách dễ dàng!</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">6 tuần</span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/business-analytics-course/?tracking_source=trainings-cards-data-science">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\internships\categories\mba.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Phân tích kinh doanh</h4>
+                                    <p class="course-caption">Làm chủ kỹ năng phân tích dữ liệu kinh doanh một cách dễ dàng!</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">6 tuần</span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/business-analytics-course/?tracking_source=trainings-cards-data-science">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\internships\categories\mba.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Phân tích kinh doanh</h4>
+                                    <p class="course-caption">Làm chủ kỹ năng phân tích dữ liệu kinh doanh một cách dễ dàng!</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">6 tuần</span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/business-analytics-course/?tracking_source=trainings-cards-data-science">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\internships\categories\mba.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Phân tích kinh doanh</h4>
+                                    <p class="course-caption">Làm chủ kỹ năng phân tích dữ liệu kinh doanh một cách dễ dàng!</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">6 tuần</span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/business-analytics-course/?tracking_source=trainings-cards-data-science">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\internships\categories\mba.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Phân tích kinh doanh</h4>
+                                    <p class="course-caption">Làm chủ kỹ năng phân tích dữ liệu kinh doanh một cách dễ dàng!</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">6 tuần</span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/business-analytics-course/?tracking_source=trainings-cards-data-science">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\internships\categories\mba.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Phân tích kinh doanh</h4>
+                                    <p class="course-caption">Làm chủ kỹ năng phân tích dữ liệu kinh doanh một cách dễ dàng!</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">6 tuần</span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="navigation-container  ">
+                    <div class="navigation">
+                        <i class="control left disabled" aria-hidden="true"></i>
+                        <div class="indicators-container">
+                            <div class='indicators' id="indicators-Data Science">
+                            </div>
+                        </div>
+                        <i class="control right" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Design" class="category-container">
+            <div class="category-heading">
+                Thiết kế
+                <span class="course-count">(8)</span>
+            </div>
+            <div class="custom-carousel" data-category="Design">
+                <div class="slider">
+                    <div class="slider-item">
+                        <a href="">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\uiux.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Thiết kế UI/UX</h4>
+                                    <p class="course-caption">Thành thạo kiểu chữ, màu sắc, khung dây và hơn thế nữa để trở thành nhà thiết kế UI / UX chuyên nghiệp</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">6 tuần</span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/graphic-design-course/?tracking_source=trainings-cards-design">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\internships\categories\design.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Thiết kế đồ họa</h4>
+                                    <p class="course-caption">Thiết kế đồ họa tuyệt đẹp bằng Adobe Photoshop</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">6 tuần</span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/video-editing-course/?tracking_source=trainings-cards-design">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\pre.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Chỉnh sửa Video</h4>
+                                    <p class="course-caption">Làm chủ hiệu ứng chuyển tiếp, hiệu ứng hình ảnh,.. trong Adobe Premiere Pro</p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">6 tuần</span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\Ae.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Hoạt họa</h4>
+                                    <p class="course-caption">Nắm vững nền tảng của hoạt ảnh nhiều hơn bằng cách sử dụng Adobe After Effects!
+                                    </p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">6 tuần</span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\Ae.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Hoạt họa</h4>
+                                    <p class="course-caption">Nắm vững nền tảng của hoạt ảnh nhiều hơn bằng cách sử dụng Adobe After Effects!
+                                    </p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">6 tuần</span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"
+                                                               style=""></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="">
+                            <div class="course-card">
+                                <div class="course-image">
+                                    <div class="img-responsive lazy-load"
+                                         data-src=".\static\images\home\trainings\icons\Ae.png"></div>
+                                </div>
+                                <div class="course-block">
+                                    <h4 class="course-title">Hoạt họa</h4>
+                                    <p class="course-caption">Nắm vững nền tảng của hoạt ảnh nhiều hơn bằng cách sử dụng Adobe After Effects!
+                                    </p>
+                                    <div class="course-block-footer-treatment">
+                                        <div class="duration-view">
+                                            Thời gian học:<span style="font-weight: 500">6 tuần</span>
+                                        </div>
+                                        <div class="know-more-button">
+                                            <div class="underline-animate">
+                                                <div class="line-container"
+                                                     style="padding-top: 8px; padding-left: 8px; padding-bottom: 6px;">
+                                                        <span class="hover hover-1 line-span">
+                                                        <div id="know-more-box">
+                                                            Xem thêm
+                                                            <i class="is-icon-chevron-right-bold-s" aria-hidden="true"></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="navigation-container">
+                    <div class="navigation">
+                        <i class="control left disabled" aria-hidden="true"></i>
+                        <div class="indicators-container">
+                            <div class='indicators' id="indicators-Design">
+                            </div>
+                        </div>
+                        <i class="control right" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<div id="footer">
+    <div class="max-width-container">
+        <div>
+            <div class="footer-inner">
+                <div class="inner-footer d-none d-lg-block a1">
+                    <div class="menu-heading">
+                        <p>Lập trình</p>
+                    </div>
+                    <div class="items">
+                        <div>
+                            <a href="/web-development-course/?tracking_source=trainings-footer-programming" style="">
+                                Lập trình Web 
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/python-course/?tracking_source=trainings-footer-programming" style="">
+                                Python
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/c-plus-plus-course/?tracking_source=trainings-footer-programming" style="">
+                                C C++
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/java-course/?tracking_source=trainings-footer-programming" style="">
+                                Core Java
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/android-course/?tracking_source=trainings-footer-programming" style="">
+                                Android App 
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/hacking-course/?tracking_source=trainings-footer-programming" style="">
+                                Ethical Hacking
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/react-course/?tracking_source=trainings-footer-programming" style="">
+                                React
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/data-structures-algorithms-course/?tracking_source=trainings-footer-programming"
+                               style="">
+                                Kiến trúc dữ liệu
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/clinical-trials-analysis-reporting-course/?tracking_source=trainings-footer-programming"
+                               style="">
+                               Phân tích thử nghiệm lâm sàng
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/blockchain-course/?tracking_source=trainings-footer-programming" style="">
+                                Blockchain
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/matlab-course/?tracking_source=trainings-footer-programming" style="">
+                                MATLAB
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/software-testing-course/?tracking_source=trainings-footer-programming" style="">
+                                Kiểm thử
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/aws-course/?tracking_source=trainings-footer-programming" style="">
+                                Điện toán đám mây
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/plc-programming-course/?tracking_source=trainings-footer-programming" style="">
+                                PLC 
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/product-management-course/?tracking_source=trainings-footer-programming" style="">
+                               Quản lí sản phẩm
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/nodejs-course/?tracking_source=trainings-footer-programming" style="">
+                                Node JS
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/sas-programming-course/?tracking_source=trainings-footer-programming" style="">
+                                SAS 
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/angular-course/?tracking_source=trainings-footer-programming" style="">
+                                Angular
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/robotic-process-automation-course/?tracking_source=trainings-footer-programming"
+                               style="">
+                                Tự động hóa
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/ar-vr-course/?tracking_source=trainings-footer-programming" style="">
+                                AR/VR
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/git-course/?tracking_source=trainings-footer-programming" style="">
+                                Git GitHub
+                            </a>
+                        </div>
+                        <div>
+                            <a>
+                                Full Stack 
+                                <span class="tag tag-xs" style="margin-bottom: 3px;">HOT</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner-footer d-none d-lg-block a2">
+                    <div class="menu-heading">
+                        <p>Kinh doanh và quản trị</p>
+                    </div>
+                    <div class="items">
+                        <div>
+                            <a href="/digital-marketing-course/?tracking_source=trainings-footer-business-&amp;-management"
+                               style="">
+                                Digital Marketing
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/excel-course/?tracking_source=trainings-footer-business-&amp;-management"
+                               style="">
+                                Excel nâng cao
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/financial-modeling-valuation-course/?tracking_source=trainings-footer-business-&amp;-management"
+                               style="">
+                               Mô hình hóa và định giá tài chính
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/business-analytics-course/?tracking_source=trainings-footer-business-&amp;-management"
+                               style="">
+                               Phân tích kinh doanh
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/hr-course/?tracking_source=trainings-footer-business-&amp;-management" style="">
+                                Quản trị nhân sự
+
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/business-communication-course/?tracking_source=trainings-footer-business-&amp;-management"
+                               style="">
+                               Kỹ năng giao tiếp kinh doanh
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/stock-market-trading-training/?tracking_source=trainings-footer-business-&amp;-management"
+                               style="">
+                               Giao dịch thị trường chứng khoán
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/tally-course/?tracking_source=trainings-footer-business-&amp;-management"
+                               style="">
+                               Kiếm toán
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/sql-data-analytics-course/?tracking_source=trainings-footer-business-&amp;-management"
+                               style="">
+                               SQL phân tích dữ liệu
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="inner-footer d-none d-lg-block a3">
+                    <div class="menu-heading">
+                        <p>Kỹ thuật</p>
+                    </div>
+                    <div class="items">
+                        <div>
+                            <a href="/autocad-course/?tracking_source=trainings-footer-core-engineering" style="">
+                                AutoCAD
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/vlsi-design-course/?tracking_source=trainings-footer-core-engineering" style="">
+                                VLSI Design
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/solidworks-course/?tracking_source=trainings-footer-core-engineering" style="">
+                                SOLIDWORKS
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/matlab-course/?tracking_source=trainings-footer-core-engineering" style="">
+                                MATLAB
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/ansys-course/?tracking_source=trainings-footer-core-engineering" style="">
+                                Ansys
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/catia-course/?tracking_source=trainings-footer-core-engineering" style="">
+                                CATIA
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/staad-pro-course/?tracking_source=trainings-footer-core-engineering" style="">
+                                STAAD Pro
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/plc-programming-course/?tracking_source=trainings-footer-core-engineering"
+                               style="">
+                                PLC 
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/arduino-course/?tracking_source=trainings-footer-core-engineering" style="">
+                                Arduino
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/autocad-three-d-course/?tracking_source=trainings-footer-core-engineering"
+                               style="">
+                                AutoCAD 3D
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/advanced-solidworks-course/?tracking_source=trainings-footer-core-engineering"
+                               style="">
+                                SOLIDWORKS
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="inner-footer d-none d-lg-block a4">
+                    <div class="menu-heading">
+                        <p>Khoa học dữ liệu</p>
+                    </div>
+                    <div class="items">
+                        <div>
+                            <a href="/machine-learning-course/?tracking_source=trainings-footer-data-science" style="">
+                                Machine Learning
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/data-science-beginner-course/?tracking_source=trainings-footer-data-science"
+                               style="">
+                               Khoa học dữ liệu
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/business-analytics-course/?tracking_source=trainings-footer-data-science"
+                               style="">
+                               Phân tích kinh doanh
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/clinical-trials-analysis-reporting-course/?tracking_source=trainings-footer-data-science"
+                               style="">
+                               Phân tích thử nghiệm lâm sàng
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/sql-data-analytics-course/?tracking_source=trainings-footer-data-science"
+                               style="">
+                                SQL
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/power-bi-course/?tracking_source=trainings-footer-data-science" style="">
+                                Power BI
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/deep-learning-course/?tracking_source=trainings-footer-data-science" style="">
+                                Deep Learning
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/tableau-course/?tracking_source=trainings-footer-data-science" style="">
+                                Tableau
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/sas-programming-course/?tracking_source=trainings-footer-data-science" style="">
+                                SAS 
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/natural-language-processing-course/?tracking_source=trainings-footer-data-science"
+                               style="">
+                                Ngôn ngữ tự nhiên
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/statistics-course/?tracking_source=trainings-footer-data-science" style="">
+                                Thống kê khoa học dữ liệu
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="inner-footer d-none d-lg-block a5">
+                    <div class="menu-heading">
+                        <p>Thiết kế</p>
+                    </div>
+                    <div class="items">
+                        <div>
+                            <a href="/ui-ux-design-course/?tracking_source=trainings-footer-design" style="">
+                                UI/UX Design
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/graphic-design-course/?tracking_source=trainings-footer-design" style="">
+                                Graphic Design
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/video-editing-course/?tracking_source=trainings-footer-design" style="">
+                                Video Editing
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/animation-course/?tracking_source=trainings-footer-design" style="">
+                                Animation
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/digital-art-course/?tracking_source=trainings-footer-design" style="">
+                                Digital Art
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/wordpress-course/?tracking_source=trainings-footer-design" style="">
+                                WordPress
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/colour-theory-course/?tracking_source=trainings-footer-design" style="">
+                                Lý thuyết màu sắc 
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/adobe-illustrator-course/?tracking_source=trainings-footer-design" style="">
+                                Adobe Illustrator
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner-footer d-none d-lg-block a6">
+                    <div class="menu-heading">
+                        <p>Nghệ thuật sáng tạo</p>
+                    </div>
+                    <div class="items">
+                        <div>
+                            <a href="/creative-writing-course/?tracking_source=trainings-footer-creative-arts" style="">
+                                Văn bản sáng tạo
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/photography-course/?tracking_source=trainings-footer-creative-arts" style="">
+                                Nhiếp ảnh
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/guitar-course/?tracking_source=trainings-footer-creative-arts" style="">
+                                Guitar
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/calligraphy-course/?tracking_source=trainings-footer-creative-arts" style="">
+                                Thư pháp
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/acting-course/?tracking_source=trainings-footer-creative-arts" style="">
+                                Diễn xuất
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="inner-footer d-none d-lg-block a8">
+                    <div class="menu-heading">
+                        <p>Khởi nghiệp</p>
+                    </div>
+                    <div class="items">
+                        <div>
+                            <a href="/business-communication-course/?tracking_source=trainings-footer-career-development"
+                               style="">
+                               Kỹ năng giao tiếp kinh doanh
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/ppt-course/?tracking_source=trainings-footer-career-development" style="">
+                                Thực tập và Chuẩn bị việc làm
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/how-to-ace-coding-interviews-course/?tracking_source=trainings-footer-career-development"
+                               style="">
+                               Cách phỏng vấn mã hóa ACE
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/quantitative-aptitude-course/?tracking_source=trainings-footer-career-development"
+                               style="">
+                               Khả năng định lượng
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner-footer d-none d-lg-block a9">
+                    <div class="menu-heading">
+                        <p>Ngành kiến ​​​​trúc</p>
+                    </div>
+                    <div class="items">
+                        <div>
+                            <a href="/autocad-course/?tracking_source=trainings-footer-architecture" style="">
+                                AutoCAD
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/revit-course/?tracking_source=trainings-footer-architecture" style="">
+                                Revit
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/autocad-three-d-course/?tracking_source=trainings-footer-architecture" style="">
+                                AutoCAD 3D
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner-footer d-none d-lg-block a10">
+                    <div class="menu-heading">
+                        <p>Chuyên ngành</p>
+                    </div>
+                    <div class="items">
+                        <div>
+                            <a href="/full-stack-web-development-specialization/?tracking_source=trainings-footer-specializations"
+                               style="display:flex; align-items: flex-end; justify-content:space-between;">
+                                Lập trình Full Stack 
+                                <span class="tag tag-xs" style="margin-bottom: 3px;">NEW</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/data-science-specialization/?tracking_source=trainings-footer-specializations"
+                               style="display:flex; align-items: flex-end; justify-content:space-between;">
+                                Khoa học dữ liệu
+                                <span class="tag tag-xs" style="margin-bottom: 3px;">NEW</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/human-resource-management-specialization/?tracking_source=trainings-footer-specializations"
+                               style="display:flex; align-items: flex-end; justify-content:space-between;">
+                                Quản lý nguồn nhân sự
+                                <span class="tag tag-xs" style="margin-bottom: 3px;">NEW</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/digital-marketing-specialization/?tracking_source=trainings-footer-specializations"
+                               style="display:flex; align-items: flex-end; justify-content:space-between;">
+                                Marketing kỹ thuật số
+                                <span class="tag tag-xs" style="margin-bottom: 3px;">NEW</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div id="footer-bottom">
+                <div class="item_a">
+                    <a href="https://internshala.com/refund_cancellation_policy" target="_blank">Chính sách hoàn tiền</a>
+                </div>
+                <div class="item_b">
+                    <a href="/help_center">Trung tâm trợ giúp</a>
+                </div>
+                <div class="item_c">
+                    <a href="https://docs.google.com/forms/d/1X383Hc0A4iKhOscCZTIfO8DakeNQK9D9qAqCBzl_Ugk/viewform"
+                       target="_blank">Trở thành Đối tác đào tạo của chúng tôi</a>
+                </div>
+                
+                <div class="item_e">
+                    <a href="https://internshala.com/terms#student" target="_blank">Điều khoản và điều kiện</a>
+                </div>
+                <div class="item_f">
+                    <a href="https://internshala.com/privacy" target="_blank">Chính sách bảo mật</a>
+                </div>
+                <div class="item_g">
+                    <a href="https://internshala.com/" target="_blank">Internstar</a>
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

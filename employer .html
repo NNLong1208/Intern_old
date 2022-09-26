@@ -1,0 +1,874 @@
+<head>
+    <meta content="IE=9" http-equiv="X-UA-Compatible"/>
+    <meta charset="utf-8"/>
+    <link as="font" href="static/fonts/Inter_v_3.11.woff2.bin" rel="preload" type="font/woff2"/>
+    <link as="font" href="static/fonts/Internstars-icons_nb9ica.woff2.bin" rel="preload" type="font/woff2"/>
+    <script src="static/js/web_vitals/web-vitals.umd.js"></script>
+    <script defer="" src="static/js/includes/common/libraries.js"></script>
+    <link href="static/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="static/css/registration/student/registration.1661420937.css" rel="stylesheet" type="text/css">
+
+    <link href="./star.png" rel="icon"/>
+    <title>Nhà tuyển dụng</title>
+    <link href="static/css/registration/employer/registration_new/registration.css" rel="stylesheet" type="text/css"/>
+    <script defer="" src="static/js/combined/common_form_1.js" type="text/javascript"></script>
+    <script defer="" src="static/js/includes/lottie_light.js" type="text/javascript"></script>
+    <script defer="" src="static/js/combined/employer-registration.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="wrapper">
+    <div class="header_container container-fluid" id="header">
+        <div class="max-width-container">
+            <div class="layer"></div>
+            <nav class="navbar navbar-expand-md">
+                <div class="brand_container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="static/images/home/internships/categories/internstarslogotrans.png"/>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="registration_form" id="internship_form">
+            <div class="banner banner_internship"></div>
+            <div class="banner banner_job"></div>
+            <div class="container-fluid internship" id="content-inner">
+                <div class="max-width-container">
+                    <div id="registration-container">
+                        <div id="registration-container-left">
+                            <div id="job-registration-container-left" style="display: none">
+                                <div class="registration-content">
+                                    <div class="image_container">
+                                        <picture>
+                                            <source media="(max-width: 575px)"
+                                                    srcset="static/images/registration/employer/registration_new/job/heading/r575.svg"/>
+                                            <source media="(max-width: 767px)"
+                                                    srcset="static/images/registration/employer/registration_new/job/heading/r767.svg"/>
+                                            <source media="(max-width: 991px)"
+                                                    srcset="static/images/registration/employer/registration_new/job/heading/r991.svg"/>
+                                            <source media="(max-width: 1255px)"
+                                                    srcset="static/images/registration/employer/registration_new/job/heading/r1255.svg"/>
+                                            <source media="(max-width: 1366px)"
+                                                    srcset="static/images/registration/employer/registration_new/job/heading/r1366.svg"/>
+                                            <img alt="Hire the best freshers FASTER" class="heading_image"
+                                                 src="static/images/registration/employer/registration_new/job/heading/r1920.svg"/>
+                                        </picture>
+                                    </div>
+                                    <h3 class="registration-content-price">
+                                        Assured hiring with 100% refund if you are not able to hire.
+                                    </h3>
+                                </div>
+                            </div>
+                            <div id="internship-registration-container-left" style="display: flex">
+                                <div class="registration-content">
+                                    <h2 class="registration-content-header">
+                                        Thuê những sinh viên thực tập tốt nhất
+                                    </h2>
+                                    <h3 class="features_container_1">
+                                        Đăng ký và đăng kỳ thực tập của bạn miễn phí ngay bây giờ!
+                                    </h3>
+                                    <h4 class="features_container_2">
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="internship" id="registration-container-right">
+                            <div id="form-container">
+                                <form class="Internstars-form" id="registration-form" method="POST" role="form">
+                                    <input name="csrf_test_name" type="hidden"
+                                           value="07d4a0539d8f306794bdcf8d040027bb"/>
+                                    <input name="utm_source" type="hidden" value=""/>
+                                    <input name="utm_medium" type="hidden" value=""/>
+                                    <input name="utm_campaign" type="hidden" value=""/>
+                                    <input id="registration_source" name="registration_source" type="hidden"
+                                           value="internship"/>
+                                    <input name="source" type="hidden" value="Internstars"/>
+                                    <div class="form-group">
+                                        <label class="control-label" for="email"> Email chính thức </label>
+                                        <div data-content="&lt;div class='email_popover_close'&gt;&lt;i class='ic-24-cross'&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;An official id (example: &lt;span style='color:#1295c9' class='email_example'&gt;name@company_name.com&lt;/span&gt;) is strongly recommended as it helps us verify that you represent the company and enables us to provide you a quick service. If you're a student, please register &lt;a href='https://Internstars.com/registration/student' tabindex='20000'&gt;here&lt;/a&gt;.&lt;/div&gt;"
+                                             data-toggle="popover" id="email_desktop">
+                                            <input class="form-control email-field-employer-registration" id="email"
+                                                   name="email" placeholder="name@company_name.com" type="email"/>
+                                        </div>
+                                        <p id="span_note" style="margin-left:2px;">
+                                        </p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="password">Mật khẩu</label>
+                                        <input class="form-control" id="password" name="password"
+                                               placeholder="Tối thiểu 6 ký tự" type="password"/>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col" id="first_name_container">
+                                            <div class="form-group">
+                                                <label class="control-label" for="first_name">Họ</label>
+                                                <input class="form-control" id="first_name" name="first_name"
+                                                       placeholder="Họ" type="text"/>
+                                            </div>
+                                        </div>
+                                        <div class="col" id="last_name_container">
+                                            <div class="form-group">
+                                                <label class="control-label" for="last_name">Tên</label>
+                                                <input class="form-control" id="last_name" name="last_name"
+                                                       placeholder="Tên của bạn" type="text"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="restricted_keyword_error registration_form"
+                                         style="display: none;"></div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="phone_primary">Số điện thoại</label>
+                                        <div class="row" id="phone_container">
+                                            <div class="col col-3">
+                                                <input class="form-control country-code" id="country_code"
+                                                       name="country_code" type="text" value="+84"/>
+                                            </div>
+                                            <div class="col col-9">
+                                                <input class="form-control mobile-number" id="phone_primary"
+                                                       name="phone_primary"
+                                                       placeholder="Số điện thoại di động 10 chữ số" type="number"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="job_registration_form_extras" style="margin-top: 16px">
+                                        <div class="label_toc">
+<span style="color: #333333; line-height: 1.57; font-weight: 400">
+                Bằng cách đăng ký, bạn đồng ý với <a href="#" target="_blank">Các điều khoản và điều kiện</a>.
+            </span>
+                                        </div>
+                                        <div id="job_registration_button_container"
+                                             style="display: none; margin-top: 16px;">
+                                            <div id="job_employer_registration_button">
+                                                <button class="btn btn-primary" type="submit">Đăng việc ngay</button>
+                                            </div>
+                                            <div class="label_toc_2">
+                                                <div class="cta-below-1">
+                                                    For only ₹ 4,999/- per job post
+                                                </div>
+                                                <div class="cta-below-2">
+                                                    Already registered? <a data-target="#login-modal"
+                                                                           data-toggle="modal" href="#">Login here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="internship_registration_button_container" style="display: block">
+                                            <div id="job_employer_registration_button">
+                                                <button class="btn btn-primary" type="submit">Đăng ký ngay</button>
+                                            </div>
+                                            <div class="label_toc_2">
+                                                <a href="#">
+<span id="job_toc">
+                        Bạn có câu hỏi gì không ?
+                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <script nonce="F3tQm59vVtNWwI5PA9yiYA==">
+    var job_help_center_link = '/employer/help_center_faq/22';
+    var internship_help_center_link = '/employer/help_center_faq/16';
+
+
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" id="internship_registration_sections" style="display: block">
+                <div id="hiring_steps">
+                    <div class="max-width-container">
+                        <h1 class="heading_0 section_heading">
+                            Thuê thực tập sinh trong 3 bước đơn giản
+                        </h1>
+                        <div class="steps">
+                            <div class="step">
+                                <img alt="Register" class="step_img"
+                                     src="https://cdn-icons-png.flaticon.com/512/3456/3456388.png"/>
+                                <h2 class="step_heading">1. Đăng ký</h2>
+                                <div class="step_description">Bắt đầu bằng cách tạo tài khoản của bạn</div>
+                            </div>
+                            <div class="step">
+                                <img alt="Post" class="step_img"
+                                     src="https://fplusscheduler.com/upload/images/1Facebook-post-feeds-500-x-500-1000x1000.jpg"/>
+                                <h2 class="step_heading">2. Đăng bài thuê</h2>
+                                <div class="step_description">Đăng thực tập cho bất kỳ hồ sơ và vị trí nào</div>
+                            </div>
+                            <div class="step">
+                                <img alt="Hire" class="step_img"
+                                     src="https://www.vinhduc.info/public/img/facebook_group.png"/>
+                                <h2 class="step_heading">3. Thuê thực tập sinh</h2>
+                                <div class="step_description">Sàng lọc và thuê sử dụng ATS của chúng tôi</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="testimonials_internships">
+                    <div class="max-width-container">
+                        <h1 class="heading_0 section_heading">
+                            <span class="total_companies">336323</span> công ty tin tưởng chúng tôi
+                        </h1>
+                        <div class="carousel slide card-slide pointer-event" data-interval="3500" data-ride="carousel"
+                             id="testimonials_carousel_internships">
+                            <div class="carousel-inner">
+                                <div class="carousel-item testimonail_1 active">
+                                    <div class="testimonail_element">
+                                        <div class="item-top">
+                                            <img alt="Find interns for free- Harikrushna" class="employer_image"
+                                                 loading="lazy"
+                                                 src="static/images/registration/employer/registration_new/internship/employer_images/harikrushna.png"/>
+                                            <div class="desc">
+                                                <div class="name_company"><h4 class="name">Harikrushna</h4>  |  <em
+                                                        class="company">Kotak Mahindra</em></div>
+                                                <div class="linkedin">
+                                                    <a href="#" target="_blank">
+                                                        <img alt="icon_linkedin" class="icon_linkedin"
+                                                             src="https://png.pngtree.com/element_our/png/20181114/broker-flat-icon-png_238402.jpg"/>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-content">
+                                            "Đây là một nền tảng tuyệt vời để có được một nhóm ứng viên chất lượng trong
+                                            khung thời gian quy định. Chúng tôi có rất ít nền tảng kỹ thuật số để cung
+                                            cấp nguồn thực tập sinh
+                                            quanh năm, và Internstars chắc chắn là tốt nhất trong số tất cả. "
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item testimonail_2">
+                                    <div class="testimonail_element">
+                                        <div class="item-top">
+                                            <img alt="intern hiring on Internstars- Rakhee" class="employer_image"
+                                                 loading="lazy"
+                                                 src="static/images/registration/employer/registration_new/internship/employer_images/rakhee.png"/>
+                                            <div class="desc">
+                                                <div class="name_company"><h4 class="name">Rakhee Mane</h4>  |  <em
+                                                        class="company">Disney</em></div>
+                                                <div class="linkedin">
+                                                    <a href="#" target="_blank">
+                                                        <img alt="icon_linkedin" class="icon_linkedin"
+                                                             src="data:image/png;base64,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"/>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-content">
+                                            "Kinh nghiệm tuyển dụng thực tập sinh thông qua Internstars của tôi rất tốt.
+                                            thực sự ấn tượng với dịch vụ được cung cấp và tôi có thể kết thúc kỳ thực
+                                            tập
+                                            một cách nhanh chóng."
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item testimonail_3">
+                                    <div class="testimonail_element">
+                                        <div class="item-top">
+                                            <img alt="how to get interns- Manish" class="employer_image" loading="lazy"
+                                                 src="static/images/registration/employer/registration_new/internship/employer_images/manish.png"/>
+                                            <div class="desc">
+                                                <div class="name_company"><h4 class="name">Manish Nichani</h4>  |  <em
+                                                        class="company">Airbnb</em></div>
+                                                <div class="linkedin">
+                                                    <a href="#" target="_blank">
+                                                        <img alt="icon_linkedin" class="icon_linkedin"
+                                                             src="https://png.pngtree.com/element_our/png/20181114/broker-flat-icon-png_238402.jpg"/>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-content">
+                                            "Internstars đang làm rất tốt việc giúp các nhà tuyển dụng trở nên dễ dàng
+                                            hơn.
+                                            phản hồi mà tôi nhận được từ nền tảng của bạn rất ấn tượng. Nó đã giúp đỡ
+                                            tôi
+                                            xác định và thuê một số người cực kỳ tài năng cho nhiều hồ sơ. "
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item testimonail_4 mobile_testimonial_new">
+                                    <div class="testimonail_element">
+                                        <div class="item-top">
+                                            <img alt="Get free interns on Internstars- Shraddha" class="employer_image"
+                                                 loading="lazy"
+                                                 src="static/images/registration/employer/registration_new/internship/employer_images/shraddha.png"/>
+                                            <div class="desc">
+                                                <div class="name_company"><h4 class="name">Shraddha</h4>  |  <em
+                                                        class="company">Teach For India</em></div>
+                                                <div class="linkedin">
+                                                    <a href="#" target="_blank">
+                                                        <img alt="icon_linkedin" class="icon_linkedin"
+                                                             src="data:image/png;base64,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"/>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-content">
+                                            "Chúng tôi tìm kiếm những cá nhân thông minh, tận tâm và định hướng giá trị.
+                                            Internstars
+                                            đã là một đối tác tuyệt vời trong nỗ lực này và luôn cung cấp nhiều loại
+                                            của những người nộp đơn cho một loạt các vai trò. "
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-control-prev">
+                                <a data-slide="prev" href="#">
+                                    <div class="carousel_arrow_container">
+                                        <i class="ic-24-chevron-left"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-control-next">
+                                <a data-slide="next" href="#">
+                                    <div class="carousel_arrow_container">
+                                        <i class="ic-24-chevron-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="post_internship_button_container">
+                    <button class="btn btn-primary" id="post_internship_button_desktop">
+                        Đăng ký ngay
+                    </button>
+                </div>
+                <div id="know_jobs">
+                    <div class="max-width-container">
+                        <div class="know_jobs_banner">
+                            <h1 class="jb_heading">
+                                Bây giờ cũng đăng các công việc mới hơn trên <br/>Internstars
+                            </h1>
+                            <h3 class="jb_tagline">
+                                Thuê những người làm mới tốt nhất <span>nhanh hơn</span>
+                            </h3>
+                            <a href="#">
+                                <button class="btn btn-large btn-secondary jb_button">Tìm hiểu thêm</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" id="job_registration_sections" style="display: none">
+                <div id="fresher_hiring">
+                    <div class="max-width-container">
+                        <h1 class="heading_0 job_section_heading">
+                            Fresher hiring made faster and better
+                        </h1>
+                        <div class="jobs_offerings">
+                            <div class="jobs_offering">
+                                <div class="offering_content">
+                                    <div class="heading">6 mn+ jobseekers</div>
+                                    <div class="description desktop">Hire the best freshers for your team from our
+                                        updated pool of 6 mn+ jobseekers.
+                                    </div>
+                                </div>
+                                <img alt="fresher hiring talent pool benefit" class="offering_image" loading="lazy"
+                                     src="/static/images/registration/employer/registration_new/job/offerings_illustrations/jobseekers-min.png"/>
+                                <div class="description mobile">Hire the best freshers for your team from our updated
+                                    pool of 6 mn+ jobseekers.
+                                </div>
+                            </div>
+                            <div class="jobs_offering">
+                                <div class="offering_content">
+                                    <div class="heading">Get the visibility you deserve</div>
+                                    <div class="description desktop">On an average, each fresher job post is seen by
+                                        1,000+ candidates within the first 24 hours, helping you hire faster.
+                                    </div>
+                                </div>
+                                <img alt="fresher hiring visibility benefit" class="offering_image" loading="lazy"
+                                     src="/static/images/registration/employer/registration_new/job/offerings_illustrations/visibility_deserve_new-min.png"/>
+                                <div class="description mobile">On an average, each fresher job post is seen by 1,000+
+                                    candidates within the first 24 hours, helping you hire faster.
+                                </div>
+                            </div>
+                            <div class="jobs_offering">
+                                <div class="offering_content">
+                                    <div class="heading">Database access</div>
+                                    <div class="description desktop">Get access to AI recommended relevant candidate
+                                        profiles everyday to help you hire the best.
+                                    </div>
+                                </div>
+                                <img alt="job post relevant candidate benefit" class="offering_image" loading="lazy"
+                                     src="/static/images/registration/employer/registration_new/job/offerings_illustrations/database_access-min.png"/>
+                                <div class="description mobile">Get access to AI recommended relevant candidate profiles
+                                    everyday to help you hire the best.
+                                </div>
+                            </div>
+                            <div class="jobs_offering">
+                                <div class="offering_content">
+                                    <div class="heading">A truly world class ATS</div>
+                                    <div class="description desktop">From filters that save time to in-built chat that
+                                        makes interacting with the candidates super easy, experience the world of hassle
+                                        free hiring.
+                                    </div>
+                                </div>
+                                <img alt="job post ATS benefit" class="offering_image" loading="lazy"
+                                     src="/static/images/registration/employer/registration_new/job/offerings_illustrations/ats-min.png"/>
+                                <div class="description mobile">From filters that save time to in-built chat that makes
+                                    interacting with the candidates super easy, experience the world of hassle free
+                                    hiring.
+                                </div>
+                            </div>
+                            <div class="jobs_offering">
+                                <div class="offering_content">
+                                    <div class="heading">Dedicated relationship manager</div>
+                                    <div class="description desktop">Thoughtful, always around, and eager to help -
+                                        personalized service at its best.
+                                    </div>
+                                </div>
+                                <img alt="post job relationship manager benefit" class="offering_image" loading="lazy"
+                                     src="/static/images/registration/employer/registration_new/job/offerings_illustrations/dedicated_rm-min.png"/>
+                                <div class="description mobile">Thoughtful, always around, and eager to help -
+                                    personalized service at its best.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="" id="testimonial_jobs">
+                    <div class="max-width-container">
+                        <div class="carousel_testimonial carousel slide card-slide pointer-event" data-interval="3500"
+                             data-ride="carousel" id="carousel_job">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="testimonial_card">
+                                        <div class="quotes_container">
+                                            <img alt="double quotes" class="icon_svg"
+                                                 src="/static/images/registration/employer/registration_new/job/inverted_comma.svg"/>
+                                        </div>
+                                        <div class="content_container">
+                                            <div class="card_content">
+                                                <span class="double_quotes_mobile">"</span>Internstars is a great
+                                                platform to find good quality talent. Applications start coming in
+                                                within a few hours and we are usually able to find someone in 2-3 days.
+                                                Highly recommended!
+                                            </div>
+                                            <div class="card_name desktop">
+                                                <h4 class="name">Anshul Sood</h4>
+                                                <div class="designation">Oceedee Shoes</div>
+                                            </div>
+                                        </div>
+                                        <div class="card_image">
+                                            <img alt="" class="testimonial_img" loading="lazy"
+                                                 src="/static/images/registration/employer/registration_new/job/testimonial/ansul_sood-min.png"/>
+                                        </div>
+                                        <div class="card_name mobile">
+                                            <h4 class="name">Anshul Sood</h4>
+                                            <div class="designation">Oceedee Shoes</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="testimonial_card">
+                                        <div class="quotes_container">
+                                            <img alt="double quotes" class="icon_svg"
+                                                 src="/static/images/registration/employer/registration_new/job/inverted_comma.svg"/>
+                                        </div>
+                                        <div class="content_container">
+                                            <div class="card_content">
+                                                <span class="double_quotes_mobile">"</span>I’m glad I decided to
+                                                hire through Internstars. It’s really great how easy the portal is
+                                                to post a job and manage it. My hiring time for freshers came down to 15
+                                                days.
+                                            </div>
+                                            <div class="card_name desktop">
+                                                <h4 class="name">Kushagra Jaiswal</h4>
+                                                <div class="designation">Credicxo Tech Pvt Ltd</div>
+                                            </div>
+                                        </div>
+                                        <div class="card_image">
+                                            <img alt="" class="testimonial_img" loading="lazy"
+                                                 src="/static/images/registration/employer/registration_new/job/testimonial/kushagra_Jaiswal-min.png"/>
+                                        </div>
+                                        <div class="card_name mobile">
+                                            <h4 class="name">Kushagra Jaiswal</h4>
+                                            <div class="designation">Credicxo Tech Pvt Ltd</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="testimonial_card">
+                                        <div class="quotes_container">
+                                            <img alt="double quotes" class="icon_svg"
+                                                 src="/static/images/registration/employer/registration_new/job/inverted_comma.svg"/>
+                                        </div>
+                                        <div class="content_container">
+                                            <div class="card_content">
+                                                <span class="double_quotes_mobile">"</span>I have successfully hired a
+                                                few candidates using this platform. The application quality is fairly
+                                                good. It took us just 10 to 15 days to hire. The whole process is hassle
+                                                free.
+                                            </div>
+                                            <div class="card_name desktop">
+                                                <h4 class="name">Siddharth Vishwakarma</h4>
+                                                <div class="designation">Safari Kid International Pre-School</div>
+                                            </div>
+                                        </div>
+                                        <div class="card_image">
+                                            <img alt="" class="testimonial_img" loading="lazy"
+                                                 src="/static/images/registration/employer/registration_new/job/testimonial/siddharth_vishwakarma-min.png"/>
+                                        </div>
+                                        <div class="card_name mobile">
+                                            <h4 class="name">Siddharth Vishwakarma</h4>
+                                            <div class="designation">Safari Kid International Pre-School</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel_control_container">
+                                <div class="carousel-control carousel-control-prev">
+                                    <a data-slide="prev" href="#">
+                                        <div class="carousel_arrow_container">
+                                            <i aria-hidden="true" class="ic-24-chevron-left"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <ol class="carousel-indicators">
+                                    <li class="active" data-slide-to="0" data-target="#carousel_job">
+                                    <li data-slide-to="1" data-target="#carousel_job">
+                                    <li data-slide-to="2" data-target="#carousel_job">
+                                    </li>
+                                    </li></li></ol>
+                                <div class="carousel-control carousel-control-next">
+                                    <a data-slide="next" href="#" role="button">
+                                        <div class="carousel_arrow_container">
+                                            <i aria-hidden="true" class="ic-24-chevron-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="post_job_container">
+                    <h1 class="content_1">
+                        98% of employers found great candidates for their entry-level roles.
+                    </h1>
+                    <div class="content_2">
+                        Now let us help you find yours!
+                    </div>
+                    <a href="#">
+                        <button class="btn btn-large btn-primary" id="post_job_button_desktop">Post Job Now</button>
+                    </a>
+                    <h4 class="content_3">
+                        For only ₹ 4,999/- per job post
+                    </h4>
+                    <div class="content_4">
+                        Guaranteed hiring with 100% refund if you are not able to hire.
+                    </div>
+                </div>
+                <!-- to use this, include less('/static/css/faqs.less') in your less file-->
+                <div class="accordion_container max-width-container" id="faqs_container">
+                    <div class="heading">
+                        Frequently asked questions
+                    </div>
+                    <div class="faq_category_content">
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="heading1">
+                                    <button aria-controls="collapseOne" aria-expanded="false"
+                                            class="btn btn-link collapsed" data-target="#collapse1"
+                                            data-toggle="collapse" faq_id="1">
+                                        <div class="content">Q. How does hiring freshers through Internstars work?</div>
+                                        <div class="icons">
+                                            <img class="expand_icon"
+                                                 src="/static/images/help_center/new/expand-icon.svg"/>
+                                            <img class="collapse_icon"
+                                                 src="/static/images/help_center/new/collapse-icon.svg"/>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div aria-labelledby="heading1" class="collapse answer" data-parent="#accordion"
+                                     id="collapse1">
+                                    <div class="card-body">
+
+                                        Simply register and post your job on Internstars for ₹ 4999. (Note - You
+                                        can also opt for 1-month and 1-year subscription plans). Jobseekers will start
+                                        applying once your job is made live. Meanwhile, invite candidates from a curated
+                                        list of jobseekers most suitable for your job.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="heading2">
+                                    <button aria-controls="collapseOne" aria-expanded="false"
+                                            class="btn btn-link collapsed" data-target="#collapse2"
+                                            data-toggle="collapse" faq_id="2">
+                                        <div class="content">Q. I need a candidate with prior work experience. Can I
+                                            post my job on Internstars?
+                                        </div>
+                                        <div class="icons">
+                                            <img class="expand_icon"
+                                                 src="/static/images/help_center/new/expand-icon.svg"/>
+                                            <img class="collapse_icon"
+                                                 src="/static/images/help_center/new/collapse-icon.svg"/>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div aria-labelledby="heading2" class="collapse answer" data-parent="#accordion"
+                                     id="collapse2">
+                                    <div class="card-body">
+                                        You may only post jobs for freshers (no prior work experience) on Internstars.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="heading3">
+                                    <button aria-controls="collapseOne" aria-expanded="false"
+                                            class="btn btn-link collapsed" data-target="#collapse3"
+                                            data-toggle="collapse" faq_id="3">
+                                        <div class="content">Q. Is there any criteria of minimum CTC to post jobs on
+                                            Internstars?
+                                        </div>
+                                        <div class="icons">
+                                            <img class="expand_icon"
+                                                 src="/static/images/help_center/new/expand-icon.svg"/>
+                                            <img class="collapse_icon"
+                                                 src="/static/images/help_center/new/collapse-icon.svg"/>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div aria-labelledby="heading3" class="collapse answer" data-parent="#accordion"
+                                     id="collapse3">
+                                    <div class="card-body">
+
+                                        Yes, you may post fresher jobs with a minimum CTC of 2 LPA only.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="heading4">
+                                    <button aria-controls="collapseOne" aria-expanded="false"
+                                            class="btn btn-link collapsed" data-target="#collapse4"
+                                            data-toggle="collapse" faq_id="4">
+                                        <div class="content">Q. How much should I pay to post my job on Internstars?
+                                        </div>
+                                        <div class="icons">
+                                            <img class="expand_icon"
+                                                 src="/static/images/help_center/new/expand-icon.svg"/>
+                                            <img class="collapse_icon"
+                                                 src="/static/images/help_center/new/collapse-icon.svg"/>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div aria-labelledby="heading4" class="collapse answer" data-parent="#accordion"
+                                     id="collapse4">
+                                    <div class="card-body">
+                                        T<span xss="removed">he price for posting a job is 4,999 - inclusive of all taxes. Additionally, you can also check our 1-month and 1-year subscription plans. With 1-month and 1-year subscription plans, you can post unlimited premium internships and fresher jobs for the entire period. </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="heading5">
+                                    <button aria-controls="collapseOne" aria-expanded="false"
+                                            class="btn btn-link collapsed" data-target="#collapse5"
+                                            data-toggle="collapse" faq_id="5">
+                                        <div class="content">Q. Will I be able to integrate applications received on
+                                            Internstars into our ATS?
+                                        </div>
+                                        <div class="icons">
+                                            <img class="expand_icon"
+                                                 src="/static/images/help_center/new/expand-icon.svg"/>
+                                            <img class="collapse_icon"
+                                                 src="/static/images/help_center/new/collapse-icon.svg"/>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div aria-labelledby="heading5" class="collapse answer" data-parent="#accordion"
+                                     id="collapse5">
+                                    <div class="card-body">
+                                        No, you won’t be able to integrate the applications into your ATS but we
+                                        provide our own ATS to review, shortlist, hire, and reject applications.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="heading6">
+                                    <button aria-controls="collapseOne" aria-expanded="false"
+                                            class="btn btn-link collapsed" data-target="#collapse6"
+                                            data-toggle="collapse" faq_id="6">
+                                        <div class="content">Q. For how long can I access the applications after my job
+                                            post expires?
+                                        </div>
+                                        <div class="icons">
+                                            <img class="expand_icon"
+                                                 src="/static/images/help_center/new/expand-icon.svg"/>
+                                            <img class="collapse_icon"
+                                                 src="/static/images/help_center/new/collapse-icon.svg"/>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div aria-labelledby="heading6" class="collapse answer" data-parent="#accordion"
+                                     id="collapse6">
+                                    <div class="card-body">
+                                        You can access the applications for 30 days after your post is closed on
+                                        Internstars and extend your access for 15 more days after that.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="heading7">
+                                    <button aria-controls="collapseOne" aria-expanded="false"
+                                            class="btn btn-link collapsed" data-target="#collapse7"
+                                            data-toggle="collapse" faq_id="7">
+                                        <div class="content">Q. How does the refund offer work?</div>
+                                        <div class="icons">
+                                            <img class="expand_icon"
+                                                 src="/static/images/help_center/new/expand-icon.svg"/>
+                                            <img class="collapse_icon"
+                                                 src="/static/images/help_center/new/collapse-icon.svg"/>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div aria-labelledby="heading7" class="collapse answer" data-parent="#accordion"
+                                     id="collapse7">
+                                    <div class="card-body">
+                                        <p><span xss="removed">You may claim a 100% refund if you are unable to hire even 1 candidate in 30 days, by writing to us at </span><span
+                                                xss="removed">lakshay@Internstars.com</span><span
+                                                xss="removed">. </span><span
+                                                id="docs-internal-guid-6203d195-7fff-1724-4c82-447f03accd6d"
+                                                xss="removed">Please note that refund isn't available for subscription and bulk plans. For more details on refund, please refer to our </span><a
+                                                href="#" target="_blank" xss="removed">refund policy</a><span
+                                                xss="removed">.</span><br/></p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ask-question">
+                    <a href="#">
+                        <button class="btn btn-secondary">Have a question?</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal" id="login-modal" role="dialog" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal" type="button">
+                        <i aria-hidden="true" class="ic-24-cross"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="modal-login-form" method="POST" role="form">
+                        <input name="csrf_test_name" type="hidden" value="07d4a0539d8f306794bdcf8d040027bb"/>
+                        <div class="form-group">
+                            <label class="control-label" for="email">Email</label>
+                            <input class="form-control" id="modal_email" name="email" placeholder="abcef@gmail.com"
+                                   tabindex="1" type="email"/>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="password">Mật Khẩu</label>
+                            <input class="form-control" id="modal_password" name="password"
+                                   placeholder="Phải có ít nhất 6 ký tự" tabindex="2" type="password"/>
+                        </div>
+                        <div class="forgot_password">
+                            <a href="#" id="forgot-password">Quên mật khẩu?</a>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary" id="modal_login_submit" tabindex="3" type="submit">Đăng nhập
+                            </button>
+                        </div>
+                        <div class="form-group new_to_Internstars">
+                            <label>
+                                Bạn mới sử dụng Internstars? Đăng ký (<a href="#">Sinh viên</a> / <a href="#">Công
+                                ty</a>)
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login modal - error message for employers blocked -->
+    <div aria-hidden="true" class="modal fade" id="employer_blocked_error_modal" role="dialog" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="heading">
+                    Your account is put on hold.<i aria-hidden="true" class="ic-24-cross" data-dismiss="modal"
+                                                   id="close_modal" style="cursor: pointer;float:right"></i>
+                </div>
+                <div class="heading1">
+                    Your account is put on hold.<i aria-hidden="true" class="ic-24-cross" data-dismiss="modal"
+                                                   id="close_modal1" style="cursor: pointer;float:right"></i>
+                </div>
+                <div class="main_content">
+                    <div class="line1"></div>
+                    <div class="sub_heading">
+                        What happened?
+                    </div>
+                    <div>
+                        We have determined that this account is violation of Internstars's <span
+                            class="primary_color"><a href="#">rules</a></span>.
+                    </div>
+                    <div class="content_specially_for">
+                        Specifically for,
+                    </div>
+                    <div class="error_heading" id="heading_content1"></div>
+                    <div class="error_content_1" id="error_content1"></div>
+                    <div class="error_heading" id="heading_content2"></div>
+                    <div class="error_content_1" id="error_content2"></div>
+                    <div class="error_content_2">
+                        If you wish to appeal this, or seek further clarification, please contact our team at <span
+                            class="primary_color"><a href="#">complaints@Internstars.com</a></span>
+                    </div>
+                    <div class="line2"></div>
+                    <div class="icon_container">
+                        <i class="ic-24-alert-circle"></i>
+                        <div class="icon_content">
+                            If this has happened by mistake, it will automatically be reverted within 24 hours.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="employer_footer" id="footer">
+        <div class="container-fluid" id="employer_footer">
+            <div class="max-width-container">
+                <div class="elements">
+                    <div class="element">
+                        <a href="#">Về chúng tôi</a>
+                    </div>
+                    <div class="element">
+                        <a href="#">đang tuyển dụng</a>
+                    </div>
+                    <div class="element">
+                        <a href="#">Nguồn lực nhà tuyển dụng</a>
+                    </div>
+                    <div class="element">
+                        <a href="#">Dịch vụ của chúng tôi</a>
+                    </div>
+                    <div class="element">
+                        <a href="#">Điều khoản và điều kiện</a>
+                    </div>
+                    <div class="element">
+                        <a href="#">Bảo mật</a>
+                    </div>
+                    <div class="element">
+                        <a href="#">Chính sách hoàn tiền</a>
+                    </div>
+                    <div class="element">
+                        <a href="#">Liên hệ chúng tôi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="footer-bottom">
+            <div class="max-width-container">
+                <div id="copyright">
+                    © Copyright 2022 Internstars
+                </div>
+            </div>
+        </div>
+    </div>
+    <script nonce="F3tQm59vVtNWwI5PA9yiYA==">var big_brand = 'yes';</script>
+</div>
+</body>
