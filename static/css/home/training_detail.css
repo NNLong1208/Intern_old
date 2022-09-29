@@ -12971,7 +12971,8 @@ button.like-anchor .is-icon-chevron-right {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 2000px;
+  width: 1600px;
+  border-radius: 10px;
 }
 .highlights-feature .highlights {
   margin: auto;
