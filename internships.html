@@ -3,7 +3,7 @@
     <link href="./star.png" rel="icon"/>
     <title>Thực tập</title>
     <link as="font" href="static/fonts/Inter_v_3.11.woff2.bin" rel="preload" type="font/woff2"/>
-    <link as="font" href="static/fonts/internshala-icons_nb9ica.woff2.bin" rel="preload" type="font/woff2"/>
+    <link as="font" href="static/fonts/internstar-icons_nb9ica.woff2.bin" rel="preload" type="font/woff2"/>
     <script src="static/js/web_vitals/web-vitals.umd.js"></script>
     <script defer="" src="static/js/includes/common/libraries.js"></script>
     <link href="static/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"/>
@@ -42,7 +42,7 @@
                             <button class="btn btn-primary" id="modal_login_submit" tabindex="3" type="submit">Đăng nhập
                             </button>
                         </div>
-                        <div class="form-group new_to_internshala">
+                        <div class="form-group new_to_internstars">
                             <label>
                                 Đăng ký ngay tại đây (<a href="#">Sinh viên</a> / <a href="#">Công ty</a>)
                             </label>
@@ -126,11 +126,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="location_container form-group" data-container="body"
-                                             data-content="&lt;div style='width:160px; font-size:12px;' class='data_content'&gt;Click here to change location&lt;/div&gt;"
-                                             data-placement="bottom"
-                                             data-template='&lt;div class="popover location-filters-popover" style="background-color:#1295c9; color:#fff;"&gt;&lt;div class="arrow" style="left:14% !important"&gt;&lt;/div&gt;&lt;div class="popover-inner"&gt;&lt;div class="popover-content"&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;'
-                                             data-toggle="popover" id="location_filter">
+                                        <div class="location_container form-group" data-container="body">
                                             <label class="control-label" for="city_sidebar">Địa điểm</label>
                                             <div id="cityOptions">
                                                 <div class="chosen-container chosen-container-multi chosen-with-drop"
@@ -191,13 +187,16 @@
                                             <div class="form-group" id="start_date_mobile_container">
                                                 <label for="start_date">Thời gian thực tập (tháng)</label>
                                                 <div class="optionsContainer">
-                                                    <div class="datepicker_wrapper form-control custom_datepicker"
-                                                         id="start_date_pseudo">
-                                                        <div class="value" style="display:none">
-                                                            <span></span>
-                                                            <i class="ic-16-cross date_clear"></i>
-                                                        </div>
-                                                    </div>
+                                                    <div class="chosen-container chosen-container-multi chosen-with-drop"
+                                                     id="city_sidebar_chosen_temp" title="">
+                                                    <ul class="chosen-choices">
+                                                        <li class="search-field">
+                                                            <input autocomplete="off"
+                                                                   class="chosen-search-input default"
+                                                                   style="width: 119px;" tabindex="4" type="text"/>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                                 </div>
                                             </div>
                                             <div class="filters_checkboxes_containers">
@@ -283,8 +282,8 @@
                                                 <div class="other_detail_item_row">
                                                     <div class="other_detail_item stipend_container">
                                                         <div class="item_heading">
-                                                            <i class="ic-16-money"></i>
-                                                            <span>
+     <span>                                                         <i class="ic-16-money"></i>
+                                                          
                                 Lương                           </span>
                                                         </div>
                                                         <div class="item_body">
@@ -331,28 +330,28 @@
                             <div class="footer-list">
                                 <h5>Thực tập theo địa điểm</h5>
                                 <div class="footer-list-item">
-                                    <a href="#">Thực tập ở India</a>
+                                    <a href="#">Thực tập ở Việt Nam</a>
                                 </div>
                                 <div class="footer-list-item">
-                                    <a href="#">Thực tập ở Delhi</a>
+                                    <a href="#">Thực tập ở Hà Nội</a>
                                 </div>
                                 <div class="footer-list-item">
-                                    <a href="#">Thực tập ở Bangalore</a>
+                                    <a href="#">Thực tập ở Huế</a>
                                 </div>
                                 <div class="footer-list-item">
-                                    <a href="#">Thực tập ở Hyderabad</a>
+                                    <a href="#">Thực tập ở Đà Nẵng</a>
                                 </div>
                                 <div class="footer-list-item">
-                                    <a href="#">Thực tập ở Mumbai</a>
+                                    <a href="#">Thực tập ở Tp. Hồ Chí Minh</a>
                                 </div>
                                 <div class="footer-list-item">
-                                    <a href="#">Thực tập ở Chennai</a>
+                                    <a href="#">Thực tập ở Hải Phòng</a>
                                 </div>
                                 <div class="footer-list-item">
-                                    <a href="#">Thực tập ở Gurgaon</a>
+                                    <a href="#">Thực tập ở Nam Định</a>
                                 </div>
                                 <div class="footer-list-item">
-                                    <a href="#">Thực tập ở Kolkata</a>
+                                    <a href="#">Thực tập ở Nghệ An</a>
                                 </div>
                                 <div class="footer-list-item">
                                     <a href="#">Thực tập ảo</a>
@@ -395,19 +394,19 @@
                             <div class="footer-list">
                                 <h5>Việc làm theo địa điểm</h5>
                                 <div class="footer-list-item">
-                                    <a href="#" rel="noopener" target="_blank">công việc trong Delhi</a>
+                                    <a href="#" rel="noopener" target="_blank">Công việc ở Hà Nội</a>
                                 </div>
                                 <div class="footer-list-item">
-                                    <a href="#" rel="noopener" target="_blank">công việc trong Mumbai</a>
+                                    <a href="#" rel="noopener" target="_blank">Công việc ở Huế</a>
                                 </div>
                                 <div class="footer-list-item">
-                                    <a href="#" rel="noopener" target="_blank">công việc trong Bangalore</a>
+                                    <a href="#" rel="noopener" target="_blank">Công việc ở Đà Nẵng</a>
                                 </div>
                                 <div class="footer-list-item">
-                                    <a href="#" rel="noopener" target="_blank">công việc trong Jaipur</a>
+                                    <a href="#" rel="noopener" target="_blank">Công việc ở Tp. Hồ Chí Minh</a>
                                 </div>
                                 <div class="footer-list-item">
-                                    <a href="#" rel="noopener" target="_blank">công việc trong Kolkata</a>
+                                    <a href="#" rel="noopener" target="_blank">Công việc ở Hải Phòng</a>
                                 </div>
                             </div>
                         </div>
@@ -476,7 +475,7 @@
                                 </h5>
                                 </a>
                                 <div class="footer-training-container">
-                                    <div id="trainings_internshala_left">
+                                    <div id="trainings_internstars_left">
                                         <div class="footer-list-item">
                                             <a href="#" rel="noopener" target="_blank">Phát triển web</a>
                                         </div>
@@ -487,7 +486,7 @@
                                             <a href="#" rel="noopener" target="_blank">Tiếp thị kỹ thuật số</a>
                                         </div>
                                     </div>
-                                    <div id="trainings_internshala_center">
+                                    <div id="trainings_internstars_center">
                                         <div class="footer-list-item">
                                             <a href="#" rel="noopener" target="_blank">Học máy</a>
                                         </div>
@@ -498,7 +497,7 @@
                                             <a href="#" rel="noopener" target="_blank">AutoCAD</a>
                                         </div>
                                     </div>
-                                    <div id="trainings_internshala_right">
+                                    <div id="trainings_internstars_right">
                                         <div class="footer-list-item">
                                             <a href="#" rel="noopener" target="_blank">Khoa học dữ liệu</a>
                                         </div>
@@ -514,9 +513,9 @@
                         </div>
                         <div class="footer-column desktop-footer-1255" id="about-us-container">
                             <div class="footer-list">
-                                <h5 class="d-none d-lg-block">Về Internshala</h5>
+                                <h5 class="d-none d-lg-block">Về internstars</h5>
                                 <div class="footer-link-conatiner">
-                                    <div id="about_internshala_left">
+                                    <div id="about_internstars_left">
                                         <div class="footer-list-item">
                                             <a href="#">Về chúng tôi</a>
                                         </div>
@@ -536,7 +535,7 @@
                                             <a href="#">Dịch vụ của chúng tôi</a>
                                         </div>
                                     </div>
-                                    <div id="about_internshala_center">
+                                    <div id="about_internstars_center">
                                         <div class="footer-list-item">
                                             <a href="#">Điều khoản &amp;&amp;; Các điều kiện</a>
                                         </div>
@@ -547,7 +546,7 @@
                                             <a href="#">Liên hệ chúng tôi</a>
                                         </div>
                                     </div>
-                                    <div id="about_internshala_right"></div>
+                                    <div id="about_internstars_right"></div>
                                 </div>
                             </div>
                         </div>
@@ -597,7 +596,7 @@
                         <div id="dummy-container"></div>
                     </div>
                     <div id="footer-about-us-container">
-                        <div class="footer-column" id="about_internshala_left">
+                        <div class="footer-column" id="about_internstars_left">
                             <div class="footer-list">
                                 <div class="footer-list-item">
                                     <a href="#">Về chúng tôi</a>
@@ -610,7 +609,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="footer-column" id="about_internshala_center">
+                        <div class="footer-column" id="about_internstars_center">
                             <div class="footer-list">
                                 <div class="footer-list-item">
                                     <a href="#" target="_blank">Nhật ký nhóm</a>
@@ -623,10 +622,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="footer-column" id="about_internshala_right">
+                        <div class="footer-column" id="about_internstars_right">
                             <div class="footer-list">
                                 <div class="footer-list-item">
-                                    <a href="#">Điều khoản &amp;&amp; Các điều kiện</a>
+                                    <a href="#">Điều khoản &amp;Các điều kiện</a>
                                 </div>
                                 <div class="footer-list-item">
                                     <a href="#">Riêng tư</a>
