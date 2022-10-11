@@ -1990,11 +1990,13 @@
     color:#484848
 }
 @media (max-width:767px){
+   
     .modal.internshala-modal .modal-dialog .modal-content .modal-body .message_container .text-message.small-device-text-center{
         text-align:center
     }
 }
 @media (max-width:575px){
+    
     .modal.internshala-modal .modal-dialog .modal-content .modal-body .message_container .text-message.small-device-text-center{
         text-align:left
     }
@@ -7217,6 +7219,13 @@ ul.location_autocomplete_plugin li:last-child:after{
     }
 }
 
+@media (max-width:900px){
+    #content #content-inner{
+        background-image:url('https://images.pexels.com/photos/257894/pexels-photo-257894.jpeg?cs=srgb&dl=pexels-pixabay-257894.jpg&fm=jpg');
+        
+    }
+}
+
 
 #content #content-inner .max-width-container{
     padding:48px 0 0;
@@ -7487,10 +7496,15 @@ ul.location_autocomplete_plugin li:last-child:after{
     }
 }
 @media (max-width:991px){
+    #content #content-inner{
+        background-image:url('https://images.pexels.com/photos/257894/pexels-photo-257894.jpeg?cs=srgb&dl=pexels-pixabay-257894.jpg&fm=jpg');
+        background-size: cover;
+    }
     #content #content-inner .max-width-container #registration-container #registration-container-left{
         height:360px;
         background-position:bottom;
-        padding-top:16px
+        padding-top:16px;
+        
     }
     #content #content-inner .max-width-container #registration-container #registration-container-left .heading_0{
         font-size:24px;
@@ -7515,6 +7529,10 @@ ul.location_autocomplete_plugin li:last-child:after{
     }
 }
 @media (max-width:767px){
+    #content #content-inner{
+        background-image:url('https://images.pexels.com/photos/257894/pexels-photo-257894.jpeg?cs=srgb&dl=pexels-pixabay-257894.jpg&fm=jpg');
+        
+    }
     #content #content-inner .max-width-container{
         padding-bottom:48px
     }
