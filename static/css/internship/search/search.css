@@ -4,12 +4,10 @@
 .generic_footer .container-fluid .max-width-container #footer-bottom .clear,.ui-helper-clearfix:after{
     clear:both
 }
-.popular_list{
-    margin-top: 20px;
-}
 .pagination {
     margin-left: 150px;
     display: inline-block;
+    margin-bottom: 20px;
   }
   
   .pagination a {
